@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://ct6rch75d64w7"]
+
+[ext_resource type="Script" uid="uid://ufc55sp2kc5n" path="res://scripts/checkpoint.gd" id="1_els25"]
+[ext_resource type="Texture2D" uid="uid://cn1wr665sh8ab" path="res://sprites/props/spacetimekey1.png" id="2_t5h7x"]
+[ext_resource type="Texture2D" uid="uid://dh781nxeojp7q" path="res://sprites/effects/Light_Stronger.png" id="3_f5no8"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_jitki"]
+blend_mode = 1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38gqa"]
+size = Vector2(83, 82)
+
+[sub_resource type="Animation" id="Animation_55l13"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rplkm"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.2502502, 1.2502502, 1.2502502, 1), Color(1, 1, 1, 1), Color(1.2502502, 1.2502502, 1.2502502, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:offset")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -4.565), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jitki"]
+_data = {
+&"RESET": SubResource("Animation_55l13"),
+&"idle": SubResource("Animation_rplkm")
+}
+
+[node name="Checkpoint" type="Area2D" unique_id=1259292273]
+script = ExtResource("1_els25")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1025028594]
+z_index = 12
+texture = ExtResource("2_t5h7x")
+
+[node name="light" type="Sprite2D" parent="Sprite2D" unique_id=1992187968]
+self_modulate = Color(0.92108685, 6.8345666e-06, 0.5907974, 1)
+z_index = 10
+z_as_relative = false
+texture_filter = 2
+material = SubResource("CanvasItemMaterial_jitki")
+position = Vector2(-0.99981594, -2.000011)
+scale = Vector2(2.1562595, 2.2187498)
+texture = ExtResource("3_f5no8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1647602807]
+position = Vector2(1.5, -2)
+shape = SubResource("RectangleShape2D_38gqa")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=876797642]
+libraries/ = SubResource("AnimationLibrary_jitki")
+autoplay = &"idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

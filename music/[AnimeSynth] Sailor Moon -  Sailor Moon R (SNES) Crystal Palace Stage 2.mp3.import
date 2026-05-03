@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eqg21iy0g38p"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Crystal Palace Stage 2.mp3-a4cf1b4c7454769ee3e79461899161e6.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Crystal Palace Stage 2.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Crystal Palace Stage 2.mp3-a4cf1b4c7454769ee3e79461899161e6.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

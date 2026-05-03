@@ -1,0 +1,467 @@
+[gd_scene format=3 uid="uid://d2wlacln52ryq"]
+
+[ext_resource type="Texture2D" uid="uid://cks2rd2gr7cd5" path="res://textures/sky1.png" id="1_7xkpl"]
+[ext_resource type="Texture2D" uid="uid://digba14fkfpl3" path="res://textures/fg2.png" id="2_51okg"]
+[ext_resource type="Texture2D" uid="uid://cpoojy2bkw6dw" path="res://textures/fg3.png" id="3_7syiw"]
+[ext_resource type="Texture2D" uid="uid://b0lmc7rnsfsxd" path="res://textures/sky4.png" id="4_nggln"]
+[ext_resource type="Texture2D" uid="uid://w1o0tf2kd33v" path="res://sprites/bokeh/bcy2A0.png" id="5_fgxhr"]
+[ext_resource type="Texture2D" uid="uid://ctffuv2r55nh7" path="res://sprites/bokeh/bcyaA0.png" id="6_54k30"]
+[ext_resource type="Texture2D" uid="uid://iat2fughcgaj" path="res://sprites/bokeh/bpinA0.png" id="7_3emit"]
+[ext_resource type="Texture2D" uid="uid://c4mow6ymhvf44" path="res://sprites/bokeh/bpi2A0.png" id="8_aj0mx"]
+[ext_resource type="Texture2D" uid="uid://b1prse3gy677b" path="res://sprites/bokeh/bpurA0.png" id="9_16r4w"]
+[ext_resource type="Texture2D" uid="uid://1yu3it61btff" path="res://sprites/bokeh/bredA0.png" id="10_b4rgg"]
+[ext_resource type="Texture2D" uid="uid://fmssig71rlp2" path="res://sprites/bokeh/byelA0.png" id="11_fe0b4"]
+[ext_resource type="Texture2D" uid="uid://ckec3xrckwao6" path="res://textures/moonwl.png" id="12_50u00"]
+
+[node name="Sky" type="Node2D" unique_id=559529114]
+process_mode = 3
+
+[node name="Parallax2D-sky" type="Parallax2D" parent="." unique_id=1016166424]
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(1280, 720)
+repeat_times = 30
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D-sky" unique_id=1386631793]
+position = Vector2(-0.53245544, -0.44700631)
+scale = Vector2(0.62500006, 0.703125)
+texture = ExtResource("1_7xkpl")
+offset = Vector2(1024.8519, 512.63574)
+
+[node name="Parallax2D-town2" type="Parallax2D" parent="." unique_id=342278702]
+z_index = 2
+scroll_scale = Vector2(0.08, 0.05)
+scroll_offset = Vector2(0, 42.62)
+repeat_size = Vector2(1280, 0)
+repeat_times = 30
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D-town2" unique_id=966079604]
+z_index = 1
+position = Vector2(639.99994, 365.50003)
+scale = Vector2(0.62499994, 0.7138672)
+texture = ExtResource("2_51okg")
+
+[node name="Parallax2D-town1" type="Parallax2D" parent="." unique_id=1842201807]
+z_index = 1
+scroll_scale = Vector2(0.15, 0.1)
+scroll_offset = Vector2(0, 85.235)
+repeat_size = Vector2(1280, 0)
+repeat_times = 30
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D-town1" unique_id=1262165408]
+z_index = 2
+position = Vector2(640, 359.99997)
+scale = Vector2(0.625, 0.70312494)
+texture = ExtResource("3_7syiw")
+
+[node name="Parallax2D-town3" type="Parallax2D" parent="." unique_id=688184981]
+scroll_scale = Vector2(0.05, 0.025)
+repeat_size = Vector2(1280, 0)
+repeat_times = 30
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D-town3" unique_id=976434110]
+z_index = 1
+position = Vector2(639.99994, 360.00003)
+scale = Vector2(0.625, 0.703125)
+texture = ExtResource("4_nggln")
+
+[node name="BokehParallax" type="Parallax2D" parent="." unique_id=986560658]
+scale = Vector2(1.64, 1.64)
+scroll_scale = Vector2(0.9, 0.9)
+repeat_size = Vector2(1280, 720)
+autoscroll = Vector2(-4, 0)
+repeat_times = 20
+
+[node name="bokeh" type="Sprite2D" parent="BokehParallax" unique_id=1500001838]
+z_index = 3
+texture_filter = 2
+position = Vector2(2.5646303, 59.94611)
+texture = ExtResource("5_fgxhr")
+
+[node name="bokeh2" type="Sprite2D" parent="BokehParallax" unique_id=1167686305]
+modulate = Color(1, 1, 1, 0.36078432)
+z_index = 11
+texture_filter = 2
+position = Vector2(418.4183, 261.7754)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("6_54k30")
+
+[node name="bokeh3" type="Sprite2D" parent="BokehParallax" unique_id=1674033006]
+modulate = Color(1, 1, 1, 0.36078432)
+z_index = 3
+texture_filter = 2
+position = Vector2(220.24756, -33.956333)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh4" type="Sprite2D" parent="BokehParallax" unique_id=1291273108]
+modulate = Color(1, 1, 1, 0.6117647)
+z_index = 11
+texture_filter = 2
+position = Vector2(-329.75244, 163.60464)
+scale = Vector2(0.725, 0.725)
+texture = ExtResource("8_aj0mx")
+
+[node name="bokeh5" type="Sprite2D" parent="BokehParallax" unique_id=246282075]
+modulate = Color(1, 1, 1, 0.6117647)
+z_index = 3
+texture_filter = 2
+position = Vector2(63.881706, 292.54367)
+scale = Vector2(0.725, 0.725)
+texture = ExtResource("9_16r4w")
+
+[node name="bokeh6" type="Sprite2D" parent="BokehParallax" unique_id=1232896658]
+modulate = Color(1, 1, 1, 0.6117647)
+z_index = 11
+texture_filter = 2
+position = Vector2(479.73538, 494.37296)
+scale = Vector2(0.725, 0.725)
+texture = ExtResource("10_b4rgg")
+
+[node name="bokeh7" type="Sprite2D" parent="BokehParallax" unique_id=1686383221]
+modulate = Color(1, 1, 1, 0.36078432)
+z_index = 3
+texture_filter = 2
+position = Vector2(281.56464, 198.64124)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh8" type="Sprite2D" parent="BokehParallax" unique_id=407565384]
+z_index = 11
+texture_filter = 2
+position = Vector2(-268.43536, 396.2022)
+texture = ExtResource("11_fe0b4")
+
+[node name="bokeh9" type="Sprite2D" parent="BokehParallax" unique_id=432896219]
+modulate = Color(1, 1, 1, 0.38039216)
+z_index = 3
+texture_filter = 2
+position = Vector2(155.34512, 155.9583)
+texture = ExtResource("5_fgxhr")
+
+[node name="bokeh10" type="Sprite2D" parent="BokehParallax" unique_id=459821541]
+modulate = Color(1, 1, 1, 0.36078432)
+z_index = 11
+texture_filter = 2
+position = Vector2(571.1988, 357.7876)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("6_54k30")
+
+[node name="bokeh11" type="Sprite2D" parent="BokehParallax" unique_id=1170609518]
+modulate = Color(1, 1, 1, 0.38039216)
+z_index = 3
+texture_filter = 2
+position = Vector2(373.02805, 62.05586)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh12" type="Sprite2D" parent="BokehParallax" unique_id=381903328]
+modulate = Color(1, 1, 1, 0.38039216)
+z_index = 11
+texture_filter = 2
+position = Vector2(-176.97195, 259.61685)
+texture = ExtResource("8_aj0mx")
+
+[node name="bokeh13" type="Sprite2D" parent="BokehParallax" unique_id=1035114406]
+modulate = Color(1, 1, 1, 0.36078432)
+z_index = 3
+texture_filter = 2
+position = Vector2(216.6622, 388.55585)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("9_16r4w")
+
+[node name="bokeh14" type="Sprite2D" parent="BokehParallax" unique_id=1659559167]
+modulate = Color(1, 1, 1, 0.38039216)
+z_index = 11
+texture_filter = 2
+position = Vector2(632.51587, 590.38513)
+texture = ExtResource("10_b4rgg")
+
+[node name="bokeh15" type="Sprite2D" parent="BokehParallax" unique_id=467196770]
+modulate = Color(1, 1, 1, 0.36078432)
+z_index = 3
+texture_filter = 2
+position = Vector2(434.34512, 294.65344)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh16" type="Sprite2D" parent="BokehParallax" unique_id=1514968308]
+modulate = Color(1, 1, 1, 0.38039216)
+z_index = 11
+texture_filter = 2
+position = Vector2(-115.654884, 492.21442)
+texture = ExtResource("11_fe0b4")
+
+[node name="Node2D" type="Node2D" parent="BokehParallax" unique_id=989768334]
+scale = Vector2(0.435, 0.435)
+
+[node name="BokehParallax2" type="Parallax2D" parent="BokehParallax/Node2D" unique_id=287110762]
+modulate = Color(1, 1, 1, 0.21960784)
+scale = Vector2(2.2988505, 2.2988505)
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(0, 281.37)
+repeat_size = Vector2(640, 720)
+autoscroll = Vector2(8, 0)
+repeat_times = 40
+
+[node name="bokeh" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=754803320]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(110.97863, 114.40885)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("5_fgxhr")
+
+[node name="bokeh2" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=902713695]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(291.875, 202.20464)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("6_54k30")
+
+[node name="bokeh3" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1883543284]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(205.67065, 73.56132)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh4" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1224921644]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(32.926823, 136.58536)
+scale = Vector2(0.31537503, 0.31537503)
+texture = ExtResource("8_aj0mx")
+
+[node name="bokeh5" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=29606114]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(137.65134, 215.58876)
+scale = Vector2(0.31537503, 0.31537503)
+texture = ExtResource("9_16r4w")
+
+[node name="bokeh6" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=51518715]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(318.54767, 303.38455)
+scale = Vector2(0.31537503, 0.31537503)
+texture = ExtResource("10_b4rgg")
+
+[node name="bokeh7" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=490167042]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(232.34363, 174.74126)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh8" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=2030536589]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(74.39024, 171.34146)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("11_fe0b4")
+
+[node name="bokeh9" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1560524526]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(177.43811, 156.17418)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("5_fgxhr")
+
+[node name="bokeh10" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=836859590]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(358.33435, 243.9699)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("6_54k30")
+
+[node name="bokeh11" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=705402603]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(272.13025, 115.32658)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh12" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=2123424142]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(32.88024, 201.26561)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("8_aj0mx")
+
+[node name="bokeh13" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1819297924]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(204.11108, 257.3541)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("9_16r4w")
+
+[node name="bokeh14" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=126416467]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(385.00757, 345.1498)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("10_b4rgg")
+
+[node name="bokeh15" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=494881569]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(298.8031, 216.50658)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh16" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=354375325]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(59.553093, 302.4456)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("11_fe0b4")
+
+[node name="bokeh17" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1767423790]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(470.73474, 105.262505)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("5_fgxhr")
+
+[node name="bokeh18" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1473782731]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(651.6311, 193.05829)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("6_54k30")
+
+[node name="bokeh19" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1006868081]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(565.42676, 64.41497)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh20" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=812874816]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(326.17657, 150.35397)
+scale = Vector2(0.31537503, 0.31537503)
+texture = ExtResource("8_aj0mx")
+
+[node name="bokeh21" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=410533222]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(497.4074, 206.44243)
+scale = Vector2(0.31537503, 0.31537503)
+texture = ExtResource("9_16r4w")
+
+[node name="bokeh22" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1583174934]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(678.3038, 294.2382)
+scale = Vector2(0.31537503, 0.31537503)
+texture = ExtResource("10_b4rgg")
+
+[node name="bokeh23" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=963149914]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(592.09973, 165.59491)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh24" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=871137597]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(352.84973, 251.534)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("11_fe0b4")
+
+[node name="bokeh25" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1025493224]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(537.1942, 147.02783)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("5_fgxhr")
+
+[node name="bokeh26" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1521036414]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(718.09045, 234.82356)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("6_54k30")
+
+[node name="bokeh27" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1741107091]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(631.88635, 106.18023)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh28" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=605218767]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(392.63635, 192.11926)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("8_aj0mx")
+
+[node name="bokeh29" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=921817863]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(563.8672, 248.20776)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("9_16r4w")
+
+[node name="bokeh30" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=1083245659]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(744.7637, 336.00348)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("10_b4rgg")
+
+[node name="bokeh31" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=2023568229]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(658.5592, 207.36024)
+scale = Vector2(0.63510007, 0.63510007)
+texture = ExtResource("7_3emit")
+
+[node name="bokeh32" type="Sprite2D" parent="BokehParallax/Node2D/BokehParallax2" unique_id=839484302]
+modulate = Color(1, 1, 1, 0.6627451)
+z_index = 3
+texture_filter = 2
+position = Vector2(419.3092, 293.29926)
+scale = Vector2(0.435, 0.435)
+texture = ExtResource("11_fe0b4")
+
+[node name="MoonParallax2D" type="Parallax2D" parent="." unique_id=1805524312]
+scroll_scale = Vector2(0.05, 0.01)
+
+[node name="Sprite2D" type="Sprite2D" parent="MoonParallax2D" unique_id=1432139916]
+z_index = 1
+position = Vector2(1063, 127)
+texture = ExtResource("12_50u00")

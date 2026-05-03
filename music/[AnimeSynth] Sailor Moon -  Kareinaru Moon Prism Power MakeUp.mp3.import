@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cc6jgyfojy4dr"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Kareinaru Moon Prism Power MakeUp.mp3-fa33856fb93634aa17fc873fc87ca4e2.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Kareinaru Moon Prism Power MakeUp.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Kareinaru Moon Prism Power MakeUp.mp3-fa33856fb93634aa17fc873fc87ca4e2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

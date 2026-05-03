@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://v5qsdma71kun"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon AppearsMusical.mp3-fe604c3e9c6b406fa45cd9132b77b18e.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon AppearsMusical.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon AppearsMusical.mp3-fe604c3e9c6b406fa45cd9132b77b18e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

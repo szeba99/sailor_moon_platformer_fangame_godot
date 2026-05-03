@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccvxp28y6abag"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Soldiers Of Love.mp3-d1fc664c764728ef9564a7811127c87b.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Soldiers Of Love.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Soldiers Of Love.mp3-d1fc664c764728ef9564a7811127c87b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

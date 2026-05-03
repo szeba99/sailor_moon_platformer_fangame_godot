@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b785mgx8i2y45"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Tuxedo Kamens BGM 2.mp3-443a93a2b8704f8f465cf58c67285205.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Tuxedo Kamens BGM 2.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Tuxedo Kamens BGM 2.mp3-443a93a2b8704f8f465cf58c67285205.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://us1e64u62p30"]
+
+[ext_resource type="Texture2D" uid="uid://bxk3kbqkyypa1" path="res://textures/rftp1.png" id="1_xpegi"]
+[ext_resource type="Texture2D" uid="uid://48bmtjl0i0k5" path="res://textures/rftp3.png" id="2_4sicv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nffqt"]
+size = Vector2(317, 76.055565)
+
+[node name="building12" type="StaticBody2D" unique_id=857462720]
+
+[node name="Roof" type="Node2D" parent="." unique_id=928258803]
+position = Vector2(1, 31)
+
+[node name="Sprite2D" type="Sprite2D" parent="Roof" unique_id=1484748330]
+z_index = 9
+position = Vector2(-6, 10)
+scale = Vector2(0.5668981, 0.6107409)
+texture = ExtResource("1_xpegi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=610614395]
+position = Vector2(-4.0000305, 198.34004)
+scale = Vector2(1, 5.039999)
+shape = SubResource("RectangleShape2D_nffqt")
+
+[node name="Window" type="Node2D" parent="." unique_id=1342747923]
+position = Vector2(-1, 67)
+
+[node name="Sprite2D" type="Sprite2D" parent="Window" unique_id=75539215]
+z_index = 9
+position = Vector2(-1.5000305, 175.00003)
+scale = Vector2(0.5668981, 0.6107409)
+texture = ExtResource("2_4sicv")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=539190943]

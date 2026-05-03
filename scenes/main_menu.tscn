@@ -1,0 +1,329 @@
+[gd_scene format=3 uid="uid://cmmgwkx4685e"]
+
+[ext_resource type="Texture2D" uid="uid://w1o0tf2kd33v" path="res://sprites/bokeh/bcy2A0.png" id="1_oa1go"]
+[ext_resource type="Texture2D" uid="uid://ctffuv2r55nh7" path="res://sprites/bokeh/bcyaA0.png" id="2_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://c4mow6ymhvf44" path="res://sprites/bokeh/bpi2A0.png" id="3_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://iat2fughcgaj" path="res://sprites/bokeh/bpinA0.png" id="4_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://b1prse3gy677b" path="res://sprites/bokeh/bpurA0.png" id="5_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://1yu3it61btff" path="res://sprites/bokeh/bredA0.png" id="6_flqon"]
+[ext_resource type="Texture2D" uid="uid://fmssig71rlp2" path="res://sprites/bokeh/byelA0.png" id="7_rcqid"]
+[ext_resource type="AudioStream" uid="uid://cc6jgyfojy4dr" path="res://music/[AnimeSynth] Sailor Moon -  Kareinaru Moon Prism Power MakeUp.mp3" id="8_j7ex8"]
+[ext_resource type="Script" uid="uid://dpxwr1gfy7e6t" path="res://scripts/menus/level_list.gd" id="9_a8gd2"]
+[ext_resource type="Script" uid="uid://cv6yf0vderh3x" path="res://scripts/menus/quit_game.gd" id="16_a8gd2"]
+[ext_resource type="Script" uid="uid://c7o4sbxusfeb1" path="res://scripts/menus/options.gd" id="24_wadof"]
+[ext_resource type="Script" uid="uid://dnbcaf60wdk6e" path="res://scripts/menus/fullscreen_switch.gd" id="25_b4jiv"]
+[ext_resource type="Script" uid="uid://ds2sbtrpxtbyj" path="res://scripts/menus/post_processing_button.gd" id="26_68b7m"]
+[ext_resource type="Script" uid="uid://68raxu0bb4g" path="res://scripts/menus/music_slider.gd" id="27_vanrq"]
+[ext_resource type="Script" uid="uid://bbqxavda4sjuk" path="res://scripts/menus/sfx_slider.gd" id="28_ybca7"]
+[ext_resource type="Script" uid="uid://dfghqqai3u5yv" path="res://scripts/menus/restart_level.gd" id="29_k5xsf"]
+[ext_resource type="Script" uid="uid://bnsgj0kwdxhe1" path="res://scripts/fps_counter.gd" id="31_akqfu"]
+[ext_resource type="Environment" uid="uid://6s2eyqooelm0" path="res://settings/Environment.tres" id="32_mb34c"]
+
+[node name="Node2D" type="Node2D" unique_id=1417949511]
+
+[node name="Decoration" type="Node2D" parent="." unique_id=334184723]
+position = Vector2(379, 0)
+
+[node name="Bcy2a0" type="Sprite2D" parent="Decoration" unique_id=1705432016]
+texture_filter = 2
+position = Vector2(425, 331)
+texture = ExtResource("1_oa1go")
+
+[node name="BcyaA0" type="Sprite2D" parent="Decoration" unique_id=1992165027]
+texture_filter = 2
+position = Vector2(461, 524)
+texture = ExtResource("2_tbmy8")
+
+[node name="Bpi2a0" type="Sprite2D" parent="Decoration" unique_id=2070480199]
+texture_filter = 2
+position = Vector2(787, 255)
+texture = ExtResource("3_jk1qb")
+
+[node name="BpinA0" type="Sprite2D" parent="Decoration" unique_id=342536523]
+texture_filter = 2
+position = Vector2(683, 514)
+texture = ExtResource("4_5dd4i")
+
+[node name="BpurA0" type="Sprite2D" parent="Decoration" unique_id=1352959679]
+texture_filter = 2
+position = Vector2(575, 191)
+texture = ExtResource("5_lgwnu")
+
+[node name="BredA0" type="Sprite2D" parent="Decoration" unique_id=1723296056]
+texture_filter = 2
+position = Vector2(287, 106)
+texture = ExtResource("6_flqon")
+
+[node name="ByelA0" type="Sprite2D" parent="Decoration" unique_id=975487284]
+texture_filter = 2
+position = Vector2(225, 388)
+texture = ExtResource("7_rcqid")
+
+[node name="BcyaA1" type="Sprite2D" parent="Decoration" unique_id=648301631]
+texture_filter = 2
+position = Vector2(-198, 448)
+rotation = 0.06221266
+texture = ExtResource("2_tbmy8")
+
+[node name="BpinA1" type="Sprite2D" parent="Decoration" unique_id=1214979873]
+texture_filter = 2
+position = Vector2(41, 587)
+rotation = 0.06221266
+texture = ExtResource("4_5dd4i")
+
+[node name="BpinA2" type="Sprite2D" parent="Decoration" unique_id=1882063325]
+texture_filter = 2
+position = Vector2(144, 200)
+rotation = 0.06221266
+texture = ExtResource("4_5dd4i")
+
+[node name="BcyaA2" type="Sprite2D" parent="Decoration" unique_id=2043904496]
+texture_filter = 2
+position = Vector2(-126, 637)
+rotation = 0.06221266
+texture = ExtResource("2_tbmy8")
+
+[node name="Options" type="Node2D" parent="." unique_id=1416181760]
+position = Vector2(269, 383)
+
+[node name="MusicPlayer(Random)" type="AudioStreamPlayer" parent="Options" unique_id=1638083897]
+process_mode = 3
+stream = ExtResource("8_j7ex8")
+volume_db = -5.822
+autoplay = true
+bus = &"Music"
+
+[node name="Menus" type="CanvasLayer" parent="Options" unique_id=1467117507]
+process_mode = 3
+
+[node name="MainMenu" type="ColorRect" parent="Options/Menus" unique_id=1769295804]
+offset_left = 28.0
+offset_top = 26.0
+offset_right = 435.0
+offset_bottom = 331.0
+focus_next = NodePath("VBoxContainer/NewGame")
+focus_mode = 2
+focus_behavior_recursive = 2
+color = Color(1, 1, 1, 0.34117648)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options/Menus/MainMenu" unique_id=119356110]
+z_index = 100
+layout_mode = 0
+offset_left = 13.0
+offset_top = 13.0
+offset_right = 387.0
+offset_bottom = 233.0
+focus_next = NodePath("NewGame")
+focus_mode = 2
+
+[node name="NewGame" type="Button" parent="Options/Menus/MainMenu/VBoxContainer" unique_id=1948961794]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Quit")
+focus_neighbor_top = NodePath("../Quit")
+focus_neighbor_right = NodePath("../Options")
+focus_neighbor_bottom = NodePath("../Options")
+focus_next = NodePath("../Options")
+focus_previous = NodePath("../Quit")
+text = "New Game"
+
+[node name="LevelSelect" type="ColorRect" parent="Options/Menus/MainMenu/VBoxContainer/NewGame" unique_id=293468467]
+layout_mode = 0
+offset_left = 465.0
+offset_top = -6.0
+offset_right = 1183.0
+offset_bottom = 630.0
+color = Color(1, 1, 1, 0.2627451)
+script = ExtResource("9_a8gd2")
+
+[node name="Select a level" type="Label" parent="Options/Menus/MainMenu/VBoxContainer/NewGame/LevelSelect" unique_id=1129584686]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 220.0
+offset_bottom = 51.0
+text = "Select a level"
+
+[node name="Label" type="Label" parent="Options/Menus/MainMenu/VBoxContainer/NewGame/LevelSelect" unique_id=795520511]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 14.0
+offset_right = 697.0
+offset_bottom = 49.0
+
+[node name="ItemList" type="ItemList" parent="Options/Menus/MainMenu/VBoxContainer/NewGame/LevelSelect" unique_id=2092955851]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 69.0
+offset_right = 604.0
+offset_bottom = 529.0
+allow_reselect = true
+allow_rmb_select = true
+
+[node name="Button" type="Button" parent="Options/Menus/MainMenu/VBoxContainer/NewGame/LevelSelect" unique_id=560050986]
+layout_mode = 0
+offset_left = 517.0
+offset_top = 550.0
+offset_right = 678.0
+offset_bottom = 614.0
+text = "Play"
+
+[node name="Options" type="Button" parent="Options/Menus/MainMenu/VBoxContainer" unique_id=1175778652 node_paths=PackedStringArray("options_menu")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../NewGame")
+focus_neighbor_top = NodePath("../NewGame")
+focus_neighbor_right = NodePath("OptionsMenu/Fullscreen_Label/Fullscreen_Switch")
+focus_neighbor_bottom = NodePath("../ReloadMenu")
+focus_next = NodePath("../ReloadMenu")
+focus_previous = NodePath("../NewGame")
+toggle_mode = true
+text = "Options"
+script = ExtResource("24_wadof")
+options_menu = NodePath("OptionsMenu")
+
+[node name="OptionsMenu" type="ColorRect" parent="Options/Menus/MainMenu/VBoxContainer/Options" unique_id=373570334]
+visible = false
+layout_mode = 0
+offset_left = 465.0
+offset_top = -75.0
+offset_right = 1088.0
+offset_bottom = 513.0
+focus_mode = 2
+color = Color(1, 1, 1, 0.34117648)
+
+[node name="Fullscreen_Label" type="Label" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=1187069027]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 47.0
+offset_right = 150.0
+offset_bottom = 82.0
+text = "Screen"
+
+[node name="Fullscreen_Switch" type="Button" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Fullscreen_Label" unique_id=324091449]
+layout_mode = 0
+offset_left = 109.0
+offset_top = -20.0
+offset_right = 397.0
+offset_bottom = 50.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_neighbor_right = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_neighbor_bottom = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_next = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_previous = NodePath("../../..")
+text = "Windowed"
+script = ExtResource("25_b4jiv")
+
+[node name="Bloom_Label" type="Label" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=1492742418]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 512.0
+offset_right = 442.0
+offset_bottom = 547.0
+text = "Bloom"
+
+[node name="Bloom_Switch" type="Button" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Bloom_Label" unique_id=523926625 node_paths=PackedStringArray("post_processing")]
+layout_mode = 0
+offset_left = 112.0
+offset_top = -16.0
+offset_right = 224.0
+offset_bottom = 49.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_neighbor_right = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_neighbor_bottom = NodePath("../../Fullscreen_Label/Fullscreen_Switch")
+focus_next = NodePath("../../Fullscreen_Label/Fullscreen_Switch")
+focus_previous = NodePath("../../..")
+toggle_mode = true
+text = "ON"
+script = ExtResource("26_68b7m")
+post_processing = NodePath("../../../../../../../PostProcessing/WorldEnvironment")
+
+[node name="Music_Volume_Label" type="Label" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=1524305197]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 219.0
+offset_right = 583.0
+offset_bottom = 279.0
+text = "Music volume"
+
+[node name="Music_Slider" type="HSlider" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Music_Volume_Label" unique_id=1175956075]
+layout_mode = 0
+offset_top = 41.0
+offset_right = 532.0
+offset_bottom = 100.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../Fullscreen_Label/Fullscreen_Switch")
+focus_neighbor_right = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_neighbor_bottom = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_next = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_previous = NodePath("../../..")
+max_value = 1.0
+step = 0.01
+value = 0.5
+script = ExtResource("27_vanrq")
+
+[node name="SFX_Volume_Label2" type="Label" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=212702974]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 324.0
+offset_right = 585.0
+offset_bottom = 384.0
+text = "SFX volume"
+
+[node name="SFX_Slider" type="HSlider" parent="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/SFX_Volume_Label2" unique_id=1835334843]
+layout_mode = 0
+offset_top = 41.0
+offset_right = 532.0
+offset_bottom = 100.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_neighbor_right = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_neighbor_bottom = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_next = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_previous = NodePath("../../..")
+max_value = 1.0
+step = 0.01
+script = ExtResource("28_ybca7")
+
+[node name="ReloadMenu" type="Button" parent="Options/Menus/MainMenu/VBoxContainer" unique_id=1974848866]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Options")
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_right = NodePath("../Quit")
+focus_neighbor_bottom = NodePath("../Quit")
+focus_next = NodePath("../Quit")
+focus_previous = NodePath("../Options")
+text = "Reload Menu"
+script = ExtResource("29_k5xsf")
+
+[node name="Quit" type="Button" parent="Options/Menus/MainMenu/VBoxContainer" unique_id=858504978]
+layout_mode = 2
+focus_neighbor_left = NodePath("../ReloadMenu")
+focus_neighbor_top = NodePath("../ReloadMenu")
+focus_neighbor_right = NodePath("../NewGame")
+focus_neighbor_bottom = NodePath("../NewGame")
+focus_next = NodePath("../NewGame")
+focus_previous = NodePath("../ReloadMenu")
+text = "Quit"
+script = ExtResource("16_a8gd2")
+
+[node name="fps_label" type="Label" parent="Options/Menus" unique_id=818408436]
+offset_left = 1140.0
+offset_right = 1279.0
+offset_bottom = 50.0
+text = "60 fps"
+script = ExtResource("31_akqfu")
+
+[node name="PostProcessing" type="Node2D" parent="Options" unique_id=1500260082]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Options/PostProcessing" unique_id=1975410539]
+environment = ExtResource("32_mb34c")
+
+[connection signal="pressed" from="Options/Menus/MainMenu/VBoxContainer/NewGame/LevelSelect/Button" to="Options/Menus/MainMenu/VBoxContainer/NewGame/LevelSelect" method="_on_play_button_pressed"]
+[connection signal="toggled" from="Options/Menus/MainMenu/VBoxContainer/Options" to="Options/Menus/MainMenu/VBoxContainer/Options" method="_on_toggled"]
+[connection signal="pressed" from="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Fullscreen_Label/Fullscreen_Switch" to="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Fullscreen_Label/Fullscreen_Switch" method="_on_pressed"]
+[connection signal="toggled" from="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Bloom_Label/Bloom_Switch" to="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Bloom_Label/Bloom_Switch" method="_on_toggled"]
+[connection signal="value_changed" from="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Music_Volume_Label/Music_Slider" to="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/Music_Volume_Label/Music_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/SFX_Volume_Label2/SFX_Slider" to="Options/Menus/MainMenu/VBoxContainer/Options/OptionsMenu/SFX_Volume_Label2/SFX_Slider" method="_on_value_changed"]
+[connection signal="button_up" from="Options/Menus/MainMenu/VBoxContainer/ReloadMenu" to="Options/Menus/MainMenu/VBoxContainer/ReloadMenu" method="_on_button_up"]
+[connection signal="button_up" from="Options/Menus/MainMenu/VBoxContainer/Quit" to="Options/Menus/MainMenu/VBoxContainer/Quit" method="_on_button_up"]

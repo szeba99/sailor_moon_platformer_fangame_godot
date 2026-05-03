@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d07snksfyn046"]
+
+[ext_resource type="Texture2D" uid="uid://m8v0g0s6qu8j" path="res://textures/skies/gradient_bg_moon.png" id="1_ctup8"]
+
+[node name="Background" type="CanvasLayer" unique_id=51183194]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1080302642]
+texture_filter = 2
+position = Vector2(640, 360)
+texture = ExtResource("1_ctup8")
+metadata/_edit_lock_ = true

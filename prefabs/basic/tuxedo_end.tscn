@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://qbddqgclgm4e"]
+
+[ext_resource type="Script" uid="uid://dbxbyspc26l4k" path="res://scripts/tuxedo_end.gd" id="1_4trnv"]
+[ext_resource type="Texture2D" uid="uid://1eqk2gqy0ibp" path="res://sprites/tuxedo/tuxedo_idle1.png" id="2_3voaj"]
+[ext_resource type="Texture2D" uid="uid://cpsp36ku81ian" path="res://sprites/tuxedo/tuxedo_idle2.png" id="3_1fdmm"]
+[ext_resource type="Texture2D" uid="uid://cla54sgc6l38c" path="res://sprites/tuxedo/tuxedo_idle3.png" id="4_4nddl"]
+[ext_resource type="Texture2D" uid="uid://b6p6ckbvf51v0" path="res://sprites/tuxedo/tuxedo_idle4.png" id="5_vcd7u"]
+[ext_resource type="Texture2D" uid="uid://d01l8p0hlk1hr" path="res://sprites/tuxedo/tuxedo_idle5.png" id="6_jknpc"]
+[ext_resource type="AudioStream" uid="uid://ye6xpee6frvp" path="res://music/[AnimeSynth] Sailor Moon -  Tuxedo Kamens BGM 1.mp3" id="7_82ae6"]
+[ext_resource type="AudioStream" uid="uid://b785mgx8i2y45" path="res://music/[AnimeSynth] Sailor Moon -  Tuxedo Kamens BGM 2.mp3" id="8_umbh7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ps18n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3voaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1fdmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4nddl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vcd7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jknpc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13qpb"]
+size = Vector2(60.378174, 67.373375)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_nx4cp"]
+streams_count = 2
+stream_0/stream = ExtResource("7_82ae6")
+stream_1/stream = ExtResource("8_umbh7")
+
+[node name="TuxedoEnd" type="Area2D" unique_id=1710176514]
+scale = Vector2(2.7162056, 2.7162056)
+script = ExtResource("1_4trnv")
+next_level = "uid://cmmgwkx4685e"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=166795558]
+z_index = 10
+sprite_frames = SubResource("SpriteFrames_ps18n")
+autoplay = "default"
+frame_progress = 0.7508411
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1464937892]
+position = Vector2(2.3930664, 3.313324)
+shape = SubResource("RectangleShape2D_13qpb")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1474897732]
+stream = SubResource("AudioStreamRandomizer_nx4cp")
+
+[node name="Timer" type="Timer" parent="." unique_id=1808112866]
+wait_time = 7.0
+one_shot = true
+ignore_time_scale = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

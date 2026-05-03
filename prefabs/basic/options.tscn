@@ -1,0 +1,301 @@
+[gd_scene format=3 uid="uid://6bogh472rrof"]
+
+[ext_resource type="PackedScene" uid="uid://crgdnk6io65fp" path="res://prefabs/inner_logic/sound_player.tscn" id="1_67o6h"]
+[ext_resource type="AudioStream" uid="uid://cj66ly5mlcrqm" path="res://music/[AnimeSynth] Sailor Moon -  Circus Dan No Warudakumi.mp3" id="1_rlbyh"]
+[ext_resource type="AudioStream" uid="uid://ds6wblr7ay6qy" path="res://music/[AnimeSynth] Sailor Moon -  Overture Moon Heart Sequence.mp3" id="2_67o6h"]
+[ext_resource type="AudioStream" uid="uid://eqg21iy0g38p" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Crystal Palace Stage 2.mp3" id="3_vm3mv"]
+[ext_resource type="AudioStream" uid="uid://cpo1s48330tl1" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Super S Fighting (SNES) Story Intro.mp3" id="4_egwrk"]
+[ext_resource type="AudioStream" uid="uid://c0o4qv62kxgml" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Time-Space Door.mp3" id="5_w2dor"]
+[ext_resource type="AudioStream" uid="uid://co4q8d48keuc0" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Super S Fighting (SNES) Saturn's Stage.mp3" id="6_6xv7d"]
+[ext_resource type="AudioStream" uid="uid://dak3ki83dkm5u" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Super S Fighting (SNES) Love Beauty Shock (2).mp3" id="7_uh1vh"]
+[ext_resource type="AudioStream" uid="uid://d1dlm15if4vtw" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Demon Apsu (Final Battle).mp3" id="8_2m6sv"]
+[ext_resource type="AudioStream" uid="uid://dfobifeytiek1" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) The Silver Millennium (2).mp3" id="9_k5wag"]
+[ext_resource type="AudioStream" uid="uid://bfqcbleqkqfr6" path="res://music/[AnimeSynth] Sailor Moon -  Yuuhi.mp3" id="10_j83qq"]
+[ext_resource type="AudioStream" uid="uid://dr5e2isnh3yex" path="res://music/[AnimeSynth] Sailor Moon Another Story (SNES) Battle.mp3" id="11_shkeo"]
+[ext_resource type="AudioStream" uid="uid://beh05xmfwaash" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon (SNES) Mystery.mp3" id="12_cw2ou"]
+[ext_resource type="AudioStream" uid="uid://v5qsdma71kun" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon AppearsMusical.mp3" id="13_p7s52"]
+[ext_resource type="AudioStream" uid="uid://kqpem83evm37" path="res://music/[AnimeSynth] Sailor Moon -  Watashitachi Ni Naritakute.mp3" id="14_ehomj"]
+[ext_resource type="AudioStream" uid="uid://ccvxp28y6abag" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Soldiers Of Love.mp3" id="15_og20m"]
+[ext_resource type="AudioStream" uid="uid://ilyf6q02fu0x" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Challenge.mp3" id="16_1duqr"]
+[ext_resource type="Theme" uid="uid://ed8d4caikkop" path="res://settings/MainTheme.theme" id="17_0jg7o"]
+[ext_resource type="Script" uid="uid://h47u7xle7c1t" path="res://scripts/menus/open_main_menu.gd" id="18_awdan"]
+[ext_resource type="Script" uid="uid://c7o4sbxusfeb1" path="res://scripts/menus/options.gd" id="19_o3es2"]
+[ext_resource type="Script" uid="uid://dnbcaf60wdk6e" path="res://scripts/menus/fullscreen_switch.gd" id="20_82237"]
+[ext_resource type="Script" uid="uid://ds2sbtrpxtbyj" path="res://scripts/menus/post_processing_button.gd" id="21_vis70"]
+[ext_resource type="Script" uid="uid://68raxu0bb4g" path="res://scripts/menus/music_slider.gd" id="22_y8ct2"]
+[ext_resource type="Script" uid="uid://bbqxavda4sjuk" path="res://scripts/menus/sfx_slider.gd" id="23_pjlm2"]
+[ext_resource type="Script" uid="uid://dfghqqai3u5yv" path="res://scripts/menus/restart_level.gd" id="24_3v448"]
+[ext_resource type="Script" uid="uid://b0tbcsfo3vaay" path="res://scripts/menus/quit.gd" id="25_ba81s"]
+[ext_resource type="Environment" uid="uid://6s2eyqooelm0" path="res://settings/Environment.tres" id="28_08s7s"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4p86h"]
+streams_count = 17
+stream_0/stream = ExtResource("1_rlbyh")
+stream_1/stream = ExtResource("2_67o6h")
+stream_2/stream = ExtResource("10_j83qq")
+stream_3/stream = ExtResource("11_shkeo")
+stream_4/stream = ExtResource("12_cw2ou")
+stream_5/stream = ExtResource("2_67o6h")
+stream_6/stream = ExtResource("13_p7s52")
+stream_7/stream = ExtResource("14_ehomj")
+stream_8/stream = ExtResource("15_og20m")
+stream_9/stream = ExtResource("16_1duqr")
+stream_10/stream = ExtResource("3_vm3mv")
+stream_11/stream = ExtResource("4_egwrk")
+stream_12/stream = ExtResource("5_w2dor")
+stream_13/stream = ExtResource("6_6xv7d")
+stream_14/stream = ExtResource("7_uh1vh")
+stream_15/stream = ExtResource("8_2m6sv")
+stream_16/stream = ExtResource("9_k5wag")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vbor1"]
+
+[node name="Options" type="Node2D" unique_id=1416181760]
+
+[node name="SoundPlayer" parent="." unique_id=157710456 instance=ExtResource("1_67o6h")]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1638083897]
+process_mode = 3
+stream = SubResource("AudioStreamRandomizer_4p86h")
+volume_db = -5.822
+autoplay = true
+bus = &"Music"
+
+[node name="Menus" type="CanvasLayer" parent="." unique_id=1467117507]
+process_mode = 3
+
+[node name="TouchControl" type="Control" parent="Menus" unique_id=1665933378]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="left_touch" type="TouchScreenButton" parent="Menus/TouchControl" unique_id=1267113585]
+position = Vector2(76, 381)
+scale = Vector2(7.2480707, 33.76)
+shape = SubResource("RectangleShape2D_vbor1")
+action = "ui_left"
+
+[node name="right_touch" type="TouchScreenButton" parent="Menus/TouchControl" unique_id=133690553]
+position = Vector2(229.00002, 380)
+scale = Vector2(7.9104037, 33.759995)
+shape = SubResource("RectangleShape2D_vbor1")
+action = "ui_right"
+
+[node name="jump_touch" type="TouchScreenButton" parent="Menus/TouchControl" unique_id=2039670655]
+position = Vector2(1162, 389)
+scale = Vector2(11.293304, 32.479996)
+shape = SubResource("RectangleShape2D_vbor1")
+action = "ui_accept"
+
+[node name="middle_touch" type="TouchScreenButton" parent="Menus/TouchControl" unique_id=936747151]
+position = Vector2(679, 316.99997)
+scale = Vector2(37.21998, 27.439999)
+shape = SubResource("RectangleShape2D_vbor1")
+action = "left_action"
+
+[node name="down_touch" type="TouchScreenButton" parent="Menus/TouchControl" unique_id=1274278729]
+position = Vector2(679, 653)
+scale = Vector2(37.21998, 6.279995)
+shape = SubResource("RectangleShape2D_vbor1")
+action = "ui_down"
+
+[node name="Open_Main_Menu" type="Button" parent="Menus" unique_id=224008890 node_paths=PackedStringArray("TouchControl")]
+z_index = 100
+offset_left = 1156.0
+offset_top = -1.0
+offset_right = 1280.0
+offset_bottom = 56.0
+focus_mode = 0
+theme = ExtResource("17_0jg7o")
+toggle_mode = true
+text = "Menu"
+script = ExtResource("18_awdan")
+TouchControl = NodePath("../TouchControl")
+
+[node name="MainMenu" type="ColorRect" parent="Menus/Open_Main_Menu" unique_id=1769295804]
+visible = false
+layout_mode = 0
+offset_left = -1108.0
+offset_top = 104.0
+offset_right = -701.0
+offset_bottom = 406.0
+focus_next = NodePath("VBoxContainer/Continue")
+focus_mode = 2
+focus_behavior_recursive = 2
+color = Color(1, 1, 1, 0.34117648)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menus/Open_Main_Menu/MainMenu" unique_id=119356110]
+z_index = 100
+layout_mode = 0
+offset_left = 13.0
+offset_top = 13.0
+offset_right = 387.0
+offset_bottom = 233.0
+focus_next = NodePath("Continue")
+focus_mode = 2
+
+[node name="Continue" type="Button" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer" unique_id=1948961794]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Quit")
+focus_neighbor_top = NodePath("../Quit")
+focus_neighbor_right = NodePath("../Options")
+focus_neighbor_bottom = NodePath("../Options")
+focus_next = NodePath("../Options")
+focus_previous = NodePath("../Quit")
+text = "Continue"
+
+[node name="Options" type="Button" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer" unique_id=1175778652 node_paths=PackedStringArray("options_menu")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Continue")
+focus_neighbor_top = NodePath("../Continue")
+focus_neighbor_right = NodePath("OptionsMenu/Fullscreen_Label/Fullscreen_Switch")
+focus_neighbor_bottom = NodePath("../Restart Level")
+focus_next = NodePath("../Restart Level")
+focus_previous = NodePath("../Continue")
+toggle_mode = true
+text = "Options"
+script = ExtResource("19_o3es2")
+options_menu = NodePath("OptionsMenu")
+
+[node name="OptionsMenu" type="ColorRect" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options" unique_id=373570334]
+visible = false
+layout_mode = 0
+offset_left = 465.0
+offset_top = -75.0
+offset_right = 1088.0
+offset_bottom = 513.0
+focus_mode = 2
+color = Color(1, 1, 1, 0.34117648)
+
+[node name="Fullscreen_Label" type="Label" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=1187069027]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 47.0
+offset_right = 150.0
+offset_bottom = 82.0
+text = "Screen"
+
+[node name="Fullscreen_Switch" type="Button" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Fullscreen_Label" unique_id=324091449]
+layout_mode = 0
+offset_left = 109.0
+offset_top = -20.0
+offset_right = 397.0
+offset_bottom = 50.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_neighbor_right = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_neighbor_bottom = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_next = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_previous = NodePath("../../..")
+text = "Windowed"
+script = ExtResource("20_82237")
+
+[node name="Bloom_Label" type="Label" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=1492742418]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 512.0
+offset_right = 442.0
+offset_bottom = 547.0
+text = "Bloom"
+
+[node name="Bloom_Switch" type="Button" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Bloom_Label" unique_id=523926625 node_paths=PackedStringArray("post_processing")]
+layout_mode = 0
+offset_left = 112.0
+offset_top = -16.0
+offset_right = 224.0
+offset_bottom = 49.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_neighbor_right = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_neighbor_bottom = NodePath("../../Fullscreen_Label/Fullscreen_Switch")
+focus_next = NodePath("../../Fullscreen_Label/Fullscreen_Switch")
+focus_previous = NodePath("../../..")
+toggle_mode = true
+text = "ON"
+script = ExtResource("21_vis70")
+post_processing = NodePath("../../../../../../../../PostProcessing/WorldEnvironment")
+
+[node name="Music_Volume_Label" type="Label" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=1524305197]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 219.0
+offset_right = 583.0
+offset_bottom = 279.0
+text = "Music volume"
+
+[node name="Music_Slider" type="HSlider" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Music_Volume_Label" unique_id=1175956075]
+layout_mode = 0
+offset_top = 41.0
+offset_right = 532.0
+offset_bottom = 100.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../Fullscreen_Label/Fullscreen_Switch")
+focus_neighbor_right = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_neighbor_bottom = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_next = NodePath("../../SFX_Volume_Label2/SFX_Slider")
+focus_previous = NodePath("../../..")
+max_value = 1.0
+step = 0.01
+value = 0.5
+script = ExtResource("22_y8ct2")
+
+[node name="SFX_Volume_Label2" type="Label" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu" unique_id=212702974]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 324.0
+offset_right = 585.0
+offset_bottom = 384.0
+text = "SFX volume"
+
+[node name="SFX_Slider" type="HSlider" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/SFX_Volume_Label2" unique_id=1835334843]
+layout_mode = 0
+offset_top = 41.0
+offset_right = 532.0
+offset_bottom = 100.0
+focus_neighbor_left = NodePath("../../..")
+focus_neighbor_top = NodePath("../../Music_Volume_Label/Music_Slider")
+focus_neighbor_right = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_neighbor_bottom = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_next = NodePath("../../Bloom_Label/Bloom_Switch")
+focus_previous = NodePath("../../..")
+max_value = 1.0
+step = 0.01
+script = ExtResource("23_pjlm2")
+
+[node name="Restart Level" type="Button" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer" unique_id=1974848866]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Options")
+focus_neighbor_top = NodePath("../Options")
+focus_neighbor_right = NodePath("../Quit")
+focus_neighbor_bottom = NodePath("../Quit")
+focus_next = NodePath("../Quit")
+focus_previous = NodePath("../Options")
+text = "Restart Level"
+script = ExtResource("24_3v448")
+
+[node name="Quit" type="Button" parent="Menus/Open_Main_Menu/MainMenu/VBoxContainer" unique_id=858504978]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Restart Level")
+focus_neighbor_top = NodePath("../Restart Level")
+focus_neighbor_right = NodePath("../Continue")
+focus_neighbor_bottom = NodePath("../Continue")
+focus_next = NodePath("../Continue")
+focus_previous = NodePath("../Restart Level")
+text = "Quit"
+script = ExtResource("25_ba81s")
+
+[node name="PostProcessing" type="Node2D" parent="." unique_id=1500260082]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="PostProcessing" unique_id=1975410539]
+environment = ExtResource("28_08s7s")
+
+[connection signal="toggled" from="Menus/Open_Main_Menu" to="Menus/Open_Main_Menu" method="_on_toggled"]
+[connection signal="pressed" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Continue" to="Menus/Open_Main_Menu" method="_on_continue_pressed"]
+[connection signal="toggled" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options" method="_on_toggled"]
+[connection signal="pressed" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Fullscreen_Label/Fullscreen_Switch" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Fullscreen_Label/Fullscreen_Switch" method="_on_pressed"]
+[connection signal="toggled" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Bloom_Label/Bloom_Switch" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Bloom_Label/Bloom_Switch" method="_on_toggled"]
+[connection signal="value_changed" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Music_Volume_Label/Music_Slider" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/Music_Volume_Label/Music_Slider" method="_on_value_changed"]
+[connection signal="value_changed" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/SFX_Volume_Label2/SFX_Slider" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Options/OptionsMenu/SFX_Volume_Label2/SFX_Slider" method="_on_value_changed"]
+[connection signal="button_up" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Restart Level" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Restart Level" method="_on_button_up"]
+[connection signal="button_up" from="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Quit" to="Menus/Open_Main_Menu/MainMenu/VBoxContainer/Quit" method="_on_button_up"]

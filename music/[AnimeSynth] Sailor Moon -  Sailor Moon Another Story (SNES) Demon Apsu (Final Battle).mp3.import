@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1dlm15if4vtw"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Demon Apsu (Final Battle).mp3-be1c9c790161089778ba049f8f8ca64c.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Demon Apsu (Final Battle).mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Demon Apsu (Final Battle).mp3-be1c9c790161089778ba049f8f8ca64c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

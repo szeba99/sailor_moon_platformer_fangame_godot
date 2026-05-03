@@ -1,0 +1,9 @@
+{
+	"checkpoint_x": 19690.24609375,
+	"checkpoint_y": -2298.23315429688,
+	"current_level_path": "res://scenes/testlevel.tscn",
+	"lives": -46,
+	"player_name": "Sailor Moon",
+	"save_name": "slot_1",
+	"score": 0
+}

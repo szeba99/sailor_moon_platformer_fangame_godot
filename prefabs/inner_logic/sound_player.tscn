@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://crgdnk6io65fp"]
+
+[ext_resource type="AudioStream" uid="uid://ytena43ganyu" path="res://sounds/coin1.mp3" id="1_g6bro"]
+[ext_resource type="Script" uid="uid://dn8d3ibeyp21k" path="res://scripts/sound_player.gd" id="2_g40y8"]
+
+[node name="SoundPlayer" type="AudioStreamPlayer" unique_id=157710456]
+stream = ExtResource("1_g6bro")
+volume_db = -10.468
+max_polyphony = 8
+bus = &"SFX"
+playback_type = 1
+script = ExtResource("2_g40y8")

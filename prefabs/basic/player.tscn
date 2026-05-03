@@ -1,0 +1,761 @@
+[gd_scene format=3 uid="uid://ci317f7t4mxwx"]
+
+[ext_resource type="Script" uid="uid://dgimbouu7vusi" path="res://scripts/player.gd" id="1_7xpr7"]
+[ext_resource type="Texture2D" uid="uid://whmsyvqpfbq7" path="res://sprites/moon/moon (38).png" id="2_b4knd"]
+[ext_resource type="Texture2D" uid="uid://cqr11lsaiw6ac" path="res://sprites/moon/moon (39).png" id="3_i2gt5"]
+[ext_resource type="Texture2D" uid="uid://dm5wh0lhtrfrt" path="res://sprites/moon/moon (40).png" id="4_cklxg"]
+[ext_resource type="Texture2D" uid="uid://mnqrdqnj01rw" path="res://sprites/moon/moon (41).png" id="5_yi4ui"]
+[ext_resource type="Texture2D" uid="uid://xdesjwkjuddu" path="res://sprites/moon/moon (42).png" id="6_0umtd"]
+[ext_resource type="Texture2D" uid="uid://n8emylf5wmsm" path="res://sprites/moon/moon (43).png" id="7_pjmal"]
+[ext_resource type="Texture2D" uid="uid://cev5r60e6hhca" path="res://sprites/moon/moon (44).png" id="8_r5rtq"]
+[ext_resource type="Texture2D" uid="uid://c3tso58c1rf15" path="res://sprites/moon/moon (45).png" id="9_1xetb"]
+[ext_resource type="Texture2D" uid="uid://dswxdvrqi181j" path="res://sprites/moon/moon (46).png" id="10_fiy8a"]
+[ext_resource type="Texture2D" uid="uid://b7y0i5h6qhnh7" path="res://sprites/moon/moon (20).png" id="11_gdbaj"]
+[ext_resource type="Texture2D" uid="uid://b3oxup5270v4m" path="res://sprites/moon/moon (21).png" id="12_6go5d"]
+[ext_resource type="Texture2D" uid="uid://coswpyqgioud1" path="res://sprites/moon/moon (22).png" id="13_s5ewc"]
+[ext_resource type="Texture2D" uid="uid://b2mv00gkt4vbx" path="res://sprites/moon/moon (23).png" id="14_270xx"]
+[ext_resource type="Texture2D" uid="uid://4fhk0sf8subh" path="res://sprites/moon/moon (24).png" id="15_j32k4"]
+[ext_resource type="Texture2D" uid="uid://c50rrep84sw2d" path="res://sprites/moon/moon (47).png" id="16_g5o00"]
+[ext_resource type="Texture2D" uid="uid://kr4wmyo5ltg4" path="res://sprites/moon/moon (48).png" id="17_p8lqt"]
+[ext_resource type="Texture2D" uid="uid://cpcxo5l5sef7k" path="res://sprites/moon/moon (49).png" id="18_koa16"]
+[ext_resource type="Texture2D" uid="uid://dtm0g18n7osj1" path="res://sprites/moon/moon (50).png" id="19_jnojg"]
+[ext_resource type="Texture2D" uid="uid://bdwyttf0nrlw3" path="res://sprites/moon/moon (51).png" id="20_xbs38"]
+[ext_resource type="Texture2D" uid="uid://cby5umfw6wjnr" path="res://sprites/moon/moon (52).png" id="21_jwaim"]
+[ext_resource type="Texture2D" uid="uid://21w45xv6vvmu" path="res://sprites/moon/moon (53).png" id="22_u83fk"]
+[ext_resource type="Texture2D" uid="uid://ddc8hqc47vn7m" path="res://sprites/moon/moon (54).png" id="23_72jvu"]
+[ext_resource type="Texture2D" uid="uid://cyeephharkdyk" path="res://sprites/moon/moon (2).png" id="24_xxp03"]
+[ext_resource type="Texture2D" uid="uid://csjg256afbkvm" path="res://sprites/moon/moon (3).png" id="25_hv7q3"]
+[ext_resource type="Texture2D" uid="uid://fm4kmg8xgms7" path="res://sprites/moon/moon (4).png" id="26_q350h"]
+[ext_resource type="Texture2D" uid="uid://db51ubmtyxlyh" path="res://sprites/moon/moon (1).png" id="27_00sle"]
+[ext_resource type="Texture2D" uid="uid://c8740ye5tvegf" path="res://sprites/moon/moon (5).png" id="28_pecvk"]
+[ext_resource type="Texture2D" uid="uid://ds5dlq8x8gah7" path="res://sprites/moon/moon (6).png" id="29_fwtp6"]
+[ext_resource type="Texture2D" uid="uid://bbvrul2r747a2" path="res://sprites/moon/moon (7).png" id="30_v4yak"]
+[ext_resource type="Texture2D" uid="uid://cjj3cpp2kq77" path="res://sprites/moon/moon (29).png" id="31_r2hdv"]
+[ext_resource type="Texture2D" uid="uid://bcpks3xbg87gn" path="res://sprites/moon/moon (30).png" id="32_iklg7"]
+[ext_resource type="Texture2D" uid="uid://bpuaotuov3xbc" path="res://sprites/moon/moon (31).png" id="33_hcxpe"]
+[ext_resource type="Texture2D" uid="uid://dd3cugwkg3flo" path="res://sprites/moon/moon (11).png" id="34_2poi1"]
+[ext_resource type="Texture2D" uid="uid://cxf7uof8l5gs" path="res://sprites/moon/moon (12).png" id="35_6hxdv"]
+[ext_resource type="Texture2D" uid="uid://c5uvsoxtca4vy" path="res://sprites/moon/moon (13).png" id="36_5x205"]
+[ext_resource type="Texture2D" uid="uid://biftjnmcprqah" path="res://sprites/moon/moon (14).png" id="37_8heuk"]
+[ext_resource type="Texture2D" uid="uid://chchdx4vbxpwe" path="res://sprites/moon/moon (15).png" id="38_2ylxo"]
+[ext_resource type="Texture2D" uid="uid://cyrnyl0qfb0ce" path="res://sprites/moon/moon (16).png" id="39_jpkh0"]
+[ext_resource type="Texture2D" uid="uid://0uygtwjvr66r" path="res://sprites/moon/moon (56).png" id="40_snokm"]
+[ext_resource type="Texture2D" uid="uid://cqfinw8jrhsal" path="res://sprites/moon/moon (57).png" id="41_5088v"]
+[ext_resource type="Texture2D" uid="uid://ewqle3monhdo" path="res://sprites/moon/moon (58).png" id="42_05agv"]
+[ext_resource type="Texture2D" uid="uid://bls38p36g0c3h" path="res://sprites/moon/moon (59).png" id="43_lkm8i"]
+[ext_resource type="Texture2D" uid="uid://d3jj1m6v4dltx" path="res://sprites/moon/moon (60).png" id="44_xghya"]
+[ext_resource type="Texture2D" uid="uid://1etmys45us2t" path="res://sprites/moon/moon (61).png" id="45_qmqlk"]
+[ext_resource type="Texture2D" uid="uid://b0i18yqyt7w2s" path="res://sprites/moon/moon (62).png" id="46_fo0bt"]
+[ext_resource type="Texture2D" uid="uid://dxd7uch76yx6p" path="res://sprites/moon/moon (63).png" id="47_6apnb"]
+[ext_resource type="FontFile" uid="uid://chyya86smtel6" path="res://fonts/dpcomic.ttf" id="48_1t288"]
+[ext_resource type="Script" uid="uid://cnrbgds6vp84v" path="res://scripts/number.gd" id="49_bw515"]
+[ext_resource type="Script" uid="uid://bnsgj0kwdxhe1" path="res://scripts/fps_counter.gd" id="50_i2gt5"]
+[ext_resource type="Script" uid="uid://gn64ew7ktnaw" path="res://scripts/menus/lives_indicator.gd" id="51_cklxg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7ixgg"]
+radius = 23.0
+height = 126.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sr7ik"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b4knd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i2gt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cklxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yi4ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0umtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pjmal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r5rtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1xetb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fiy8a")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_gdbaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6go5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_s5ewc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_270xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_j32k4")
+}],
+"loop": true,
+"name": &"crouch",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_g5o00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_p8lqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_koa16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jnojg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xbs38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jwaim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_u83fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_72jvu")
+}],
+"loop": false,
+"name": &"death",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_g5o00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_p8lqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_koa16")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_xxp03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_hv7q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_q350h")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_00sle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_xxp03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_hv7q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_q350h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pecvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_fwtp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_v4yak")
+}],
+"loop": true,
+"name": &"idle_2",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_r2hdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_iklg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_hcxpe")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_2poi1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_6hxdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_5x205")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_8heuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_2ylxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_jpkh0")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_snokm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_5088v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_05agv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_lkm8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_xghya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_qmqlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_fo0bt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_6apnb")
+}],
+"loop": false,
+"name": &"victory",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_snokm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_5088v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_05agv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_lkm8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_xghya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_qmqlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_fo0bt")
+}, {
+"duration": 3.0,
+"texture": ExtResource("47_6apnb")
+}],
+"loop": false,
+"name": &"victory2",
+"speed": 4.0
+}]
+
+[sub_resource type="Animation" id="Animation_7xpr7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5, -66)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../CanvasLayer/Moon coins:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(53, 45)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../CanvasLayer/Moon coins:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(140, 30)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../CanvasLayer/number:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(75, 30)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../CanvasLayer/number:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(215, 48)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../CanvasLayer/Moon coins:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../CanvasLayer/number:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../CanvasLayer/lives:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(786, 6)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../CanvasLayer/lives:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../CanvasLayer/Well done!:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../CanvasLayer/Well done!/Boyfriend rescued!:self_modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("../CanvasLayer/RecordLabel:self_modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_b4knd"]
+resource_name = "fade_out"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, -66), Vector2(-373, -215)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../CanvasLayer/Moon coins:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3.04, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(53, 45), Vector2(11.0000305, 187), Vector2(244, 182)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../CanvasLayer/Moon coins:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(140, 30)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../CanvasLayer/number:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(75, 30)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../CanvasLayer/number:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 3.01, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(215, 48), Vector2(458, 53), Vector2(572, 178)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../CanvasLayer/Moon coins:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2.135, 2.135)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../CanvasLayer/number:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2.7, 2.7)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../CanvasLayer/lives:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(786, 6), Vector2(246, 99.00003)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../CanvasLayer/lives:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.975, 1.975)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../CanvasLayer/Well done!:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(6.5133376, 7.5533376),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../CanvasLayer/Well done!/Boyfriend rescued!:self_modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(8.063337, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("../CanvasLayer/RecordLabel:self_modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 2.5033376, 4.3633375),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i2gt5"]
+_data = {
+&"RESET": SubResource("Animation_7xpr7"),
+&"fade_out": SubResource("Animation_b4knd")
+}
+
+[sub_resource type="Gradient" id="Gradient_67o6h"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7xpr7"]
+gradient = SubResource("Gradient_67o6h")
+
+[node name="Player" type="CharacterBody2D" unique_id=1127991153]
+z_index = 10
+floor_constant_speed = true
+floor_max_angle = 1.097812
+floor_snap_length = 9.0
+platform_on_leave = 2
+script = ExtResource("1_7xpr7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1166271789]
+position = Vector2(4, -62)
+shape = SubResource("CapsuleShape2D_7ixgg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1252327563]
+position = Vector2(-93, -191)
+scale = Vector2(0.38085938, 0.38085938)
+sprite_frames = SubResource("SpriteFrames_sr7ik")
+animation = &"victory2"
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1746230644]
+position = Vector2(5, -66)
+scale = Vector2(0.38085938, 0.38085938)
+process_callback = 0
+limit_bottom = 1500
+position_smoothing_enabled = true
+position_smoothing_speed = 15.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1721525908]
+volume_db = -4.892
+pitch_scale = 0.89
+bus = &"SFX"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=953021427]
+
+[node name="Moon coins" type="Label" parent="CanvasLayer" unique_id=638447676]
+z_index = 100
+offset_left = 53.0
+offset_top = 45.0
+offset_right = 193.0
+offset_bottom = 75.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("48_1t288")
+theme_override_font_sizes/font_size = 32
+text = "Moon coins:"
+
+[node name="Sailor Moon" type="Label" parent="CanvasLayer" unique_id=1391130848]
+z_index = 100
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 151.0
+offset_bottom = 43.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("48_1t288")
+theme_override_font_sizes/font_size = 32
+text = "Sailor Moon"
+
+[node name="number" type="Label" parent="CanvasLayer" unique_id=1558200261]
+z_index = 100
+offset_left = 215.0
+offset_top = 48.0
+offset_right = 290.0
+offset_bottom = 78.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("48_1t288")
+theme_override_font_sizes/font_size = 32
+text = "0"
+script = ExtResource("49_bw515")
+
+[node name="fps_label" type="Label" parent="CanvasLayer" unique_id=126439308]
+offset_left = 976.0
+offset_top = 6.0
+offset_right = 1115.0
+offset_bottom = 56.0
+text = "60 fps"
+script = ExtResource("50_i2gt5")
+
+[node name="lives" type="Label" parent="CanvasLayer" unique_id=1813035136]
+offset_left = 786.0
+offset_top = 6.0
+offset_right = 907.0008
+offset_bottom = 41.00009
+text = "lives - 3"
+script = ExtResource("51_cklxg")
+
+[node name="Well done!" type="Label" parent="CanvasLayer" unique_id=169968713]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 55.0
+offset_top = 503.0
+offset_right = 199.0
+offset_bottom = 538.0
+scale = Vector2(1.555, 1.555)
+text = "Well done!"
+
+[node name="Boyfriend rescued!" type="Label" parent="CanvasLayer/Well done!" unique_id=877522473]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 86.0
+offset_top = 50.0
+offset_right = 354.0
+offset_bottom = 85.0
+text = "Boyfriend rescued!"
+
+[node name="RecordLabel" type="Label" parent="CanvasLayer" unique_id=977291309]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 840.0
+offset_top = 179.0
+offset_right = 959.0
+offset_bottom = 214.0
+scale = Vector2(2.165, 2.165)
+text = "00:00:00"
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=324595603]
+wait_time = 6.0
+one_shot = true
+
+[node name="InputReactivator" type="Timer" parent="DeathTimer" unique_id=1064982282]
+one_shot = true
+
+[node name="RecordTimer" type="Timer" parent="." unique_id=992419195]
+wait_time = 1000000.0
+one_shot = true
+autostart = true
+ignore_time_scale = true
+
+[node name="ExitScene" type="Node2D" parent="." unique_id=562431776]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ExitScene" unique_id=630396128]
+libraries/ = SubResource("AnimationLibrary_i2gt5")
+
+[node name="Black" type="Sprite2D" parent="ExitScene" unique_id=1588249650]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -1
+position = Vector2(262.50003, 91.00003)
+scale = Vector2(53.890633, 26.15625)
+texture = SubResource("GradientTexture2D_7xpr7")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
+[connection signal="timeout" from="DeathTimer/InputReactivator" to="." method="_on_input_reactivator_timeout"]

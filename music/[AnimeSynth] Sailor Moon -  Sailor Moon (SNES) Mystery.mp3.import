@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beh05xmfwaash"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon (SNES) Mystery.mp3-4c3dcdecdf5d7abcb39cac84021ddc68.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon (SNES) Mystery.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon (SNES) Mystery.mp3-4c3dcdecdf5d7abcb39cac84021ddc68.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

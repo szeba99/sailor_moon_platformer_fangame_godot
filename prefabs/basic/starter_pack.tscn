@@ -1,0 +1,118 @@
+[gd_scene format=4 uid="uid://b671a2i7xj4ih"]
+
+[ext_resource type="PackedScene" uid="uid://ci317f7t4mxwx" path="res://prefabs/basic/player.tscn" id="1_77h7r"]
+[ext_resource type="PackedScene" uid="uid://cexkxakke81h" path="res://prefabs/tilemaps/foreground_1_tileset.tscn" id="2_u817k"]
+[ext_resource type="PackedScene" uid="uid://6bogh472rrof" path="res://prefabs/basic/options.tscn" id="2_unsyx"]
+[ext_resource type="PackedScene" uid="uid://dxv5e1mi2n4xp" path="res://prefabs/tilemaps/foreground_2_tileset.tscn" id="3_unsyx"]
+[ext_resource type="PackedScene" uid="uid://dehp7riv8p3kd" path="res://prefabs/tilemaps/tilemap_32x.tscn" id="4_p6inw"]
+[ext_resource type="PackedScene" uid="uid://qbddqgclgm4e" path="res://prefabs/basic/tuxedo_end.tscn" id="6_unsyx"]
+[ext_resource type="PackedScene" uid="uid://d07snksfyn046" path="res://prefabs/environments/bg_image_night.tscn" id="7_n7jf1"]
+[ext_resource type="Script" uid="uid://rejgvt3yqp6c" path="res://scripts/death_zone.gd" id="8_n7jf1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_an5b0"]
+distance = -614.59
+
+[node name="Node2D" type="Node2D" unique_id=1177740253]
+
+[node name="Basics" type="Node2D" parent="." unique_id=883582704]
+
+[node name="Player" parent="Basics" unique_id=1127991153 instance=ExtResource("1_77h7r")]
+position = Vector2(222, 304)
+
+[node name="CollisionShape2D" parent="Basics/Player" index="0" unique_id=1166271789]
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" parent="Basics/Player" index="1" unique_id=1252327563]
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" parent="Basics/Player" index="2" unique_id=1746230644]
+limit_bottom = 704
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" parent="Basics/Player" index="3" unique_id=1721525908]
+metadata/_edit_lock_ = true
+
+[node name="Moon coins" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="0" unique_id=638447676]
+metadata/_edit_lock_ = true
+
+[node name="Sailor Moon" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="1" unique_id=1391130848]
+metadata/_edit_lock_ = true
+
+[node name="number" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="2" unique_id=1558200261]
+metadata/_edit_lock_ = true
+
+[node name="fps_label" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="3" unique_id=126439308]
+metadata/_edit_lock_ = true
+
+[node name="lives" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="4" unique_id=1813035136]
+metadata/_edit_lock_ = true
+
+[node name="Well done!" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="5" unique_id=169968713]
+metadata/_edit_lock_ = true
+
+[node name="Boyfriend rescued!" parent="Basics/Player/CanvasLayer/Well done!" index="0" unique_id=877522473]
+metadata/_edit_lock_ = true
+
+[node name="RecordLabel" parent="Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="6" unique_id=977291309]
+metadata/_edit_lock_ = true
+
+[node name="ExitScene" parent="Basics/Player" index="7" unique_id=562431776]
+metadata/_edit_lock_ = true
+
+[node name="Black" parent="Basics/Player/ExitScene" index="1" unique_id=1588249650]
+metadata/_edit_lock_ = true
+
+[node name="Options" parent="Basics" unique_id=1416181760 instance=ExtResource("2_unsyx")]
+metadata/_edit_lock_ = true
+
+[node name="TouchControl" parent="Basics/Options/Menus" parent_id_path=PackedInt32Array(1416181760, 1467117507) index="0" unique_id=1665933378]
+metadata/_edit_lock_ = true
+
+[node name="left_touch" parent="Basics/Options/Menus/TouchControl" index="0" unique_id=1267113585]
+metadata/_edit_lock_ = true
+
+[node name="right_touch" parent="Basics/Options/Menus/TouchControl" index="1" unique_id=133690553]
+metadata/_edit_lock_ = true
+
+[node name="jump_touch" parent="Basics/Options/Menus/TouchControl" index="2" unique_id=2039670655]
+metadata/_edit_lock_ = true
+
+[node name="middle_touch" parent="Basics/Options/Menus/TouchControl" index="3" unique_id=936747151]
+metadata/_edit_lock_ = true
+
+[node name="down_touch" parent="Basics/Options/Menus/TouchControl" index="4" unique_id=1274278729]
+metadata/_edit_lock_ = true
+
+[node name="Open_Main_Menu" parent="Basics/Options/Menus" parent_id_path=PackedInt32Array(1416181760, 1467117507) index="1" unique_id=224008890]
+metadata/_edit_use_anchors_ = true
+
+[node name="TileEditors" type="Node2D" parent="Basics" unique_id=395903903]
+
+[node name="Foreground1" parent="Basics/TileEditors" unique_id=1533288404 instance=ExtResource("2_u817k")]
+tile_map_data = PackedByteArray("AAAAAAkAIAAAAAMAAAATAAkAIAACAAMAAAATAAoAIAADAAIAAAAAAAoAIAABAAIAAAABAAkAIAABAAMAAAACAAkAIAABAAMAAAADAAkAIAABAAMAAAAEAAkAIAABAAMAAAAFAAkAIAABAAMAAAAGAAkAIAABAAMAAAAHAAkAIAABAAMAAAAIAAkAIAABAAMAAAAJAAkAIAABAAMAAAAKAAkAIAABAAMAAAALAAkAIAABAAMAAAAMAAkAIAABAAMAAAANAAkAIAABAAMAAAAOAAkAIAABAAMAAAAPAAkAIAABAAMAAAAQAAkAIAABAAMAAAARAAkAIAABAAMAAAASAAkAIAABAAMAAAASAAoAIAACAAIAAAARAAoAIAACAAIAAAAQAAoAIAACAAIAAAAPAAoAIAACAAIAAAAOAAoAIAACAAIAAAANAAoAIAACAAIAAAAMAAoAIAACAAIAAAALAAoAIAACAAIAAAAKAAoAIAACAAIAAAAJAAoAIAACAAIAAAAIAAoAIAACAAIAAAAHAAoAIAACAAIAAAAFAAoAIAACAAIAAAAEAAoAIAACAAIAAAADAAoAIAACAAIAAAAGAAoAIAACAAIAAAACAAoAIAACAAIAAAABAAoAIAACAAIAAAAIAAYAIAADAAEAAAAJAAMAIAADAAEAAAAJAAYAIAADAAAAAAAKAAMAIAADAAAAAAAKAAYAIAADAAEAAAALAAMAIAADAAEAAAALAAYAIAADAAAAAAAMAAYAIAADAAEAAAA=")
+
+[node name="Foreground2" parent="Basics/TileEditors" unique_id=1572379685 instance=ExtResource("3_unsyx")]
+
+[node name="tilemap_32x" parent="Basics/TileEditors" unique_id=1801950920 instance=ExtResource("4_p6inw")]
+
+[node name="TuxedoEnd" parent="Basics" unique_id=1710176514 instance=ExtResource("6_unsyx")]
+position = Vector2(1117, 482)
+
+[node name="Background" parent="Basics" unique_id=51183194 instance=ExtResource("7_n7jf1")]
+
+[node name="deathzones" type="Node2D" parent="Basics" unique_id=594907255]
+
+[node name="Area2D" type="Area2D" parent="Basics/deathzones" unique_id=68258061]
+script = ExtResource("8_n7jf1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Basics/deathzones/Area2D" unique_id=734451145]
+position = Vector2(0, 178)
+shape = SubResource("WorldBoundaryShape2D_an5b0")
+
+[node name="Level" type="Node2D" parent="." unique_id=1126045774]
+
+[connection signal="body_entered" from="Basics/deathzones/Area2D" to="Basics/deathzones/Area2D" method="_on_body_entered"]
+
+[editable path="Basics/Player"]
+[editable path="Basics/Options"]
+[editable path="Basics/Background"]

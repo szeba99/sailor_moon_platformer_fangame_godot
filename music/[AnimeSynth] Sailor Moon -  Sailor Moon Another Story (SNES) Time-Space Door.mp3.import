@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0o4qv62kxgml"
+path="res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Time-Space Door.mp3-1ecf9cda2134d62a104ed1a6a74a26b7.mp3str"
+
+[deps]
+
+source_file="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Time-Space Door.mp3"
+dest_files=["res://.godot/imported/[AnimeSynth] Sailor Moon -  Sailor Moon Another Story (SNES) Time-Space Door.mp3-1ecf9cda2134d62a104ed1a6a74a26b7.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

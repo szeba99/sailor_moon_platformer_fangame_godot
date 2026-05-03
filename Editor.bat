@@ -1,0 +1,1 @@
+SailorMoonGame.exe --editor

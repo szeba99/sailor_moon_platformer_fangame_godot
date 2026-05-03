@@ -28,7 +28,7 @@ func _process(delta: float) -> void:
 	
 func list_levels_in_dir(path: String):
 	if not DirAccess.dir_exists_absolute(path):
-		print("ERROR: Directory does not exist: ", path) # DEBUG
+		print("ERROR: Directory does not exist: ", path)
 		return
 
 	var dir = DirAccess.open(path)
@@ -37,14 +37,21 @@ func list_levels_in_dir(path: String):
 		var file_name = dir.get_next()
 		
 		while file_name != "":
-			# Only add files ending in .tscn
-			if !dir.current_is_dir() and file_name.ends_with(".tscn"):
-				var full_path = path.path_join(file_name)
-				# save it to the list, but we also add the full path as metadatad
-				var idx = item_list.add_item(file_name)
-				item_list.set_item_metadata(idx, full_path)
+			if !dir.current_is_dir():
+				# In exported builds, .tscn files often show up as .tscn.remap
+				# We remove the .remap to check the original extension
+				var original_file_name = file_name.replace(".remap", "")
+				
+				if original_file_name.ends_with(".tscn"):
+					# We must use the original .tscn path to load the scene
+					var full_path = path.path_join(original_file_name)
+					
+					# Add to list, but show the nice name without the full path
+					var idx = item_list.add_item(original_file_name)
+					item_list.set_item_metadata(idx, full_path)
 			
 			file_name = dir.get_next()
+		dir.list_dir_end() # Good practice to close the stream
 
 func _on_level_selected(index: int):
 	# Select path from metadata

@@ -62,6 +62,9 @@ func _on_play_button_pressed():
 	if selected_level_path != "":
 		# also updating the Global variable for level restarts
 		Global.current_level_path = selected_level_path
+		Global.reset_checkpoint()
+		Global.save_game()
+		Global.load_game(Global.save_name)
 		get_tree().paused = false
 		get_tree().change_scene_to_file(selected_level_path)
 	else:

@@ -5,6 +5,11 @@ Welcome to the official repository of the **Sailor Moon Platformer Fangame**, a 
 In a twist on the classic formula, you play as **Sailor Moon** on a mission to save **Tuxedo Mask** — think of it as a reverse Mario game where the princess saves the prince!
 
 ---
+## Screenshots
+[preview1](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview1.jpg?raw=true)
+[preview2](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview2.jpg?raw=true)
+[preview3](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview3.jpg?raw=true)
+--
 
 ## 🚀 Project Status: Under Development
 

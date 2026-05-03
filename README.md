@@ -6,9 +6,9 @@ In a twist on the classic formula, you play as **Sailor Moon** on a mission to s
 
 ---
 ## Screenshots
-[preview1](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview1.jpg?raw=true)
-[preview2](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview2.jpg?raw=true)
-[preview3](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview3.jpg?raw=true)
+![preview1](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview1.jpg)
+![preview2](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview2.jpg)
+![preview3](https://github.com/szeba99/sailor_moon_platformer_fangame_godot/blob/main/screenshots/preview3.jpg)
 --
 
 ## 🚀 Project Status: Under Development

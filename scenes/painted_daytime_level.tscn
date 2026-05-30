@@ -1,0 +1,278 @@
+[gd_scene format=4 uid="uid://ba5iy4g3y4v2w"]
+
+[ext_resource type="PackedScene" uid="uid://ci317f7t4mxwx" path="res://prefabs/basic/player.tscn" id="1_ffbtl"]
+[ext_resource type="PackedScene" uid="uid://6bogh472rrof" path="res://prefabs/basic/options.tscn" id="2_1a7cl"]
+[ext_resource type="AudioStream" uid="uid://dpdqi1kqj41k" path="res://music/[AnimeSynth] Sailor Moon -  Fire Soul Love.mp3" id="3_1a7cl"]
+[ext_resource type="AudioStream" uid="uid://ccvxp28y6abag" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon R (SNES) Soldiers Of Love.mp3" id="4_1k27f"]
+[ext_resource type="PackedScene" uid="uid://cexkxakke81h" path="res://prefabs/tilemaps/foreground_1_tileset.tscn" id="6_4xjam"]
+[ext_resource type="PackedScene" uid="uid://qbddqgclgm4e" path="res://prefabs/basic/tuxedo_end.tscn" id="6_kvow2"]
+[ext_resource type="Texture2D" uid="uid://cjj445lxeld0b" path="res://textures/skies/sm_daycitysky_brighter.png" id="7_1a7cl"]
+[ext_resource type="Script" uid="uid://rejgvt3yqp6c" path="res://scripts/death_zone.gd" id="8_x4oon"]
+[ext_resource type="Texture2D" uid="uid://bt4g47umt87md" path="res://textures/painted_levels/painted_daylevel_transparent.png" id="9_1a7cl"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_q3ynt"]
+streams_count = 2
+stream_0/stream = ExtResource("3_1a7cl")
+stream_1/stream = ExtResource("4_1k27f")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_an5b0"]
+distance = -614.59
+
+[node name="Node2D" type="Node2D" unique_id=870905243]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1177740253]
+position = Vector2(-11, 15)
+
+[node name="Basics" type="Node2D" parent="Node2D" unique_id=883582704]
+
+[node name="Player" parent="Node2D/Basics" unique_id=1127991153 instance=ExtResource("1_ffbtl")]
+position = Vector2(222, 304)
+
+[node name="CollisionShape2D" parent="Node2D/Basics/Player" index="0" unique_id=1166271789]
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D/Basics/Player" index="1" unique_id=1252327563]
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" parent="Node2D/Basics/Player" index="2" unique_id=1746230644]
+limit_left = 4
+limit_right = 6565
+limit_bottom = 704
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" parent="Node2D/Basics/Player" index="3" unique_id=1721525908]
+metadata/_edit_lock_ = true
+
+[node name="Moon coins" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="0" unique_id=638447676]
+metadata/_edit_lock_ = true
+
+[node name="Sailor Moon" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="1" unique_id=1391130848]
+metadata/_edit_lock_ = true
+
+[node name="number" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="2" unique_id=1558200261]
+metadata/_edit_lock_ = true
+
+[node name="fps_label" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="3" unique_id=126439308]
+metadata/_edit_lock_ = true
+
+[node name="lives" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="4" unique_id=1813035136]
+metadata/_edit_lock_ = true
+
+[node name="Well done!" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="5" unique_id=169968713]
+metadata/_edit_lock_ = true
+
+[node name="Boyfriend rescued!" parent="Node2D/Basics/Player/CanvasLayer/Well done!" index="0" unique_id=877522473]
+metadata/_edit_lock_ = true
+
+[node name="RecordLabel" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="6" unique_id=977291309]
+metadata/_edit_lock_ = true
+
+[node name="ExitScene" parent="Node2D/Basics/Player" index="7" unique_id=562431776]
+metadata/_edit_lock_ = true
+
+[node name="Black" parent="Node2D/Basics/Player/ExitScene" index="1" unique_id=1588249650]
+metadata/_edit_lock_ = true
+
+[node name="Options" parent="Node2D/Basics" unique_id=1416181760 instance=ExtResource("2_1a7cl")]
+metadata/_edit_lock_ = true
+
+[node name="MusicPlayer" parent="Node2D/Basics/Options" index="1" unique_id=1638083897]
+stream = SubResource("AudioStreamRandomizer_q3ynt")
+
+[node name="TouchControl" parent="Node2D/Basics/Options/Menus" parent_id_path=PackedInt32Array(1416181760, 1467117507) index="0" unique_id=1665933378]
+metadata/_edit_lock_ = true
+
+[node name="left_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="0" unique_id=1267113585]
+metadata/_edit_lock_ = true
+
+[node name="right_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="1" unique_id=133690553]
+metadata/_edit_lock_ = true
+
+[node name="jump_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="2" unique_id=2039670655]
+metadata/_edit_lock_ = true
+
+[node name="middle_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="3" unique_id=936747151]
+metadata/_edit_lock_ = true
+
+[node name="down_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="4" unique_id=1274278729]
+metadata/_edit_lock_ = true
+
+[node name="Open_Main_Menu" parent="Node2D/Basics/Options/Menus" parent_id_path=PackedInt32Array(1416181760, 1467117507) index="1" unique_id=224008890]
+metadata/_edit_use_anchors_ = true
+
+[node name="TuxedoEnd" parent="Node2D/Basics" unique_id=1710176514 instance=ExtResource("6_kvow2")]
+position = Vector2(4966, -1146)
+
+[node name="Parallax2D" type="Parallax2D" parent="Node2D/Basics" unique_id=1662975863]
+scroll_scale = Vector2(0.1, 0)
+repeat_size = Vector2(1280, 720)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Basics/Parallax2D" unique_id=1080302642]
+texture_filter = 2
+position = Vector2(650.99994, 344.99994)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("7_1a7cl")
+
+[node name="deathzones" type="Node2D" parent="Node2D/Basics" unique_id=594907255]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Basics/deathzones" unique_id=68258061]
+script = ExtResource("8_x4oon")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Basics/deathzones/Area2D" unique_id=734451145]
+position = Vector2(0, 178)
+shape = SubResource("WorldBoundaryShape2D_an5b0")
+
+[node name="Foreground1" parent="Node2D" unique_id=1533288404 instance=ExtResource("6_4xjam")]
+tile_map_data = PackedByteArray("AAAMAAQAAQAAAAAAAQACAAEAAQAAAAAAAQADAAEAAQAAAAAAAQAMAP//AQAAAAAAAQAgAAgAAQAAAAAAAQAhAAgAAQAAAAAAAQAiAAgAAQAAAAAAAQBFAAMAAQAAAAAAAQBDAAMAAQAAAAAAAQBBAAMAAQAAAAAAAQA1AAgAAQAAAAAAAQBXAAYAAQAAAAAAAQBcAAMAAQAAAAAAAQBdAAMAAQAAAAAAAQBdAAIAAQAAAAAAAQBcAPv/AQAAAAAAAQBbAPv/AQAAAAAAAQBaAPv/AQAAAAAAAQBZAPT/AQAAAAAAAQBYAO3/AQAAAAAAAQBXAO3/AQAAAAAAAQBWAO3/AQAAAAAAAQBVAO3/AQAAAAAAAQBUAO3/AQAAAAAAAQBSAO3/AQAAAAAAAQBTAO7/AQAAAAAAAQBTAOz/AQAAAAAAAQBUAOv/AQAAAAAAAQBUAO//AQAAAAAAAQA3AAYAAQAAAAAABAAvAAgAAQAAAAAABQA/AAgAAQAAAAAABQAcAAgAAQAAAAAABQBbAO7/AQAAAAAABQBZAO7/AQAAAAAABQBRAO7/AQAAAAAABQBTAPf/AQAAAAAABQBeAPv/AQAAAAAABQAFAAEAAQAAAAAABQA7AAIAAQAAAAAABAA+AAAAAQAAAAAABAA4APz/AQAAAAAAAQA5APz/AQAAAAAAAQA6APz/AQAAAAAAAQA/APz/AQAAAAAAAQBAAPz/AQAAAAAAAQBBAPz/AQAAAAAAAQBCAPz/AQAAAAAAAQAsAAkAAQAAAAAAAgAlAAkAAQAAAAAAAgAeAAkAAQAAAAAAAgAcAAkAAQAAAAAAAgAJAP3/AQAAAAAABAAPAPv/AQAAAAAABAAKAPn/AQAAAAAAAgAHAPj/AQAAAAAAAQAOAPj/AQAAAAAAAQAHAPf/AQAAAAAAAQAOAPf/AQAAAAAAAQAHAPb/AQAAAAAAAQAOAPb/AQAAAAAAAQAIAPj/AQAAAAAAAQAIAPf/AQAAAAAAAQAIAPb/AQAAAAAAAQAaAAgAAQAAAAAAAQBWAPn/AQAAAAAABABZAAUAAQAAAAAABABVAO7/AQAAAAAABABMAAgAAQAAAAAABgAxAAgAAQAAAAAABgBVAOn/AQAAAAAABAA=")
+
+[node name="PaintedDaylevelTransparent" type="Sprite2D" parent="." unique_id=166075036]
+texture_filter = 2
+position = Vector2(3285.9558, -442)
+scale = Vector2(1.2831858, 1.2831858)
+texture = ExtResource("9_1a7cl")
+
+[node name="Collision" type="StaticBody2D" parent="PaintedDaylevelTransparent" unique_id=1469162828]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=215916917]
+position = Vector2(-2569.3518, 356.14484)
+scale = Vector2(0.77931035, 0.77931035)
+polygon = PackedVector2Array(11, 574, 6582, 586, 6615, -1867, 7110, -1902, 6875, 789, -63, 734, -70, -37, -222, -1796, 56, -1753)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=795045120]
+polygon = PackedVector2Array(-2090.8552, 753.59314, -2088.5173, 804.2483, -2125.924, 803.469, -2125.924, 752.0345)
+one_way_collision = true
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=273576477]
+polygon = PackedVector2Array(-2135.276, 629.68274, -2112.6758, 638.2551, -1804.069, 635.91724, -1832.1241, 625.7862)
+one_way_collision = true
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=2040844353]
+polygon = PackedVector2Array(-2197.6206, 494.08276, -2521.8137, 494.86206, -2522.593, 484.73102, -2199.1792, 484.73102)
+one_way_collision = true
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=1613546216]
+polygon = PackedVector2Array(-2122.807, 355.3655, -2124.3655, 374.84827, -1703.5378, 374.06897, -1705.8759, 343.67587)
+one_way_collision = true
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=367805478]
+polygon = PackedVector2Array(-2221.7793, 34.289642, -2222.5586, 48.31723, -1797.8345, 50.65518, -1797.8345, 34.289642)
+one_way_collision = true
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=845986756]
+polygon = PackedVector2Array(318.77246, 586.0414, 320.33105, 600.84827, 1130.0344, 596.9517, 1129.2551, 586.0414)
+one_way_collision = true
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=1379337657]
+polygon = PackedVector2Array(1590.6069, 706.8345, 1590.6069, 738.7862, 1883.6274, 743.46204, 1882.8481, 706.8345)
+one_way_collision = true
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=699041687]
+polygon = PackedVector2Array(1917.9175, 550.1931, 1918.6968, 582.14484, 2186.7793, 583.7034, 2186.7793, 550.1931)
+one_way_collision = true
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=711178782]
+polygon = PackedVector2Array(972.6138, 335.88275, 971.8345, 214.31035, 49.131104, 213.53104, 4.710449, 261.84827, 270.45508, 338.22067)
+one_way_collision = true
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=379079851]
+polygon = PackedVector2Array(2195.3516, 448.10345, 2196.9102, 471.48276, 2285.752, 476.93793, 2284.1934, 448.10345)
+one_way_collision = true
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=1204536155]
+polygon = PackedVector2Array(2335.6274, 310.94482, 2334.8481, 335.88275, 2486.0347, 336.66208, 2481.3584, 311.72412)
+one_way_collision = true
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=16295446]
+polygon = PackedVector2Array(1772.186, 173.0069, 1772.186, 196.3862, 2258.476, 200.28276, 2255.3584, 181.5793, 2214.0552, 170.66896)
+one_way_collision = true
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=817474395]
+polygon = PackedVector2Array(1347.4622, -34.289673, 1348.2415, -5.4551697, 1766.731, -1.5586243, 1765.1724, -25.717255, 1729.3242, -35.06897)
+one_way_collision = true
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=192297261]
+polygon = PackedVector2Array(1695.814, -190.1517, 1695.0347, -159.75864, 2108.0688, -161.31723, 2108.0688, -183.13791, 2072.2207, -190.93106)
+one_way_collision = true
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=2071792443]
+polygon = PackedVector2Array(1801.0205, 50.65518, 1801.0205, 69.35861, 1823.6206, 70.13794, 1823.6206, 51.43448)
+one_way_collision = true
+
+[node name="CollisionPolygon2D17" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=637247388]
+polygon = PackedVector2Array(1977.9243, -260.28964, 1977.9243, -233.79312, 2392.517, -230.67587, 2389.4, -254.0552, 2358.2275, -259.51035)
+one_way_collision = true
+
+[node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=887988533]
+polygon = PackedVector2Array(2169.6343, -354.5862, 2169.6343, -334.32413, 2192.2344, -335.10342, 2190.6758, -356.1448)
+one_way_collision = true
+
+[node name="CollisionPolygon2D19" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=1674984476]
+polygon = PackedVector2Array(2223.4067, -420.0483, 2223.4067, -402.1241, 2246.0068, -402.1241, 2245.2275, -420.0483)
+one_way_collision = true
+
+[node name="CollisionPolygon2D20" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=850697970]
+polygon = PackedVector2Array(2450.186, -451.22067, 2450.186, -496.4207, 2398.752, -510.44827, 2276.4, -509.66898, 2277.1792, -451.22067)
+one_way_collision = true
+
+[node name="CollisionPolygon2D21" type="CollisionPolygon2D" parent="PaintedDaylevelTransparent/Collision" unique_id=30032870]
+polygon = PackedVector2Array(1152.6345, -459.01382, 1239.138, -437.19308, 2558.5103, -435.6345, 2560.0688, -457.45517)
+one_way_collision = true
+
+[connection signal="body_entered" from="Node2D/Basics/deathzones/Area2D" to="Node2D/Basics/deathzones/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/Coin" to="Node2D/Foreground1/Coin" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24015" to="Node2D/Foreground1/@Area2D@24015" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24016" to="Node2D/Foreground1/@Area2D@24016" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24017" to="Node2D/Foreground1/@Area2D@24017" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24019" to="Node2D/Foreground1/@Area2D@24019" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24020" to="Node2D/Foreground1/@Area2D@24020" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24021" to="Node2D/Foreground1/@Area2D@24021" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24022" to="Node2D/Foreground1/@Area2D@24022" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24023" to="Node2D/Foreground1/@Area2D@24023" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24024" to="Node2D/Foreground1/@Area2D@24024" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24025" to="Node2D/Foreground1/@Area2D@24025" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24026" to="Node2D/Foreground1/@Area2D@24026" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24027" to="Node2D/Foreground1/@Area2D@24027" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24028" to="Node2D/Foreground1/@Area2D@24028" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24029" to="Node2D/Foreground1/@Area2D@24029" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24030" to="Node2D/Foreground1/@Area2D@24030" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24031" to="Node2D/Foreground1/@Area2D@24031" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24034" to="Node2D/Foreground1/@Area2D@24034" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24035" to="Node2D/Foreground1/@Area2D@24035" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24037" to="Node2D/Foreground1/@Area2D@24037" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24038" to="Node2D/Foreground1/@Area2D@24038" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24039" to="Node2D/Foreground1/@Area2D@24039" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24040" to="Node2D/Foreground1/@Area2D@24040" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24041" to="Node2D/Foreground1/@Area2D@24041" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24043" to="Node2D/Foreground1/@Area2D@24043" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24044" to="Node2D/Foreground1/@Area2D@24044" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24045" to="Node2D/Foreground1/@Area2D@24045" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24046" to="Node2D/Foreground1/@Area2D@24046" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24047" to="Node2D/Foreground1/@Area2D@24047" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24082" to="Node2D/Foreground1/@Area2D@24082" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24083" to="Node2D/Foreground1/@Area2D@24083" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24084" to="Node2D/Foreground1/@Area2D@24084" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24085" to="Node2D/Foreground1/@Area2D@24085" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24086" to="Node2D/Foreground1/@Area2D@24086" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24087" to="Node2D/Foreground1/@Area2D@24087" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24088" to="Node2D/Foreground1/@Area2D@24088" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/DarkCrystal" to="Node2D/Foreground1/DarkCrystal" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24092" to="Node2D/Foreground1/@Area2D@24092" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24093" to="Node2D/Foreground1/@Area2D@24093" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24094" to="Node2D/Foreground1/@Area2D@24094" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24099" to="Node2D/Foreground1/@Area2D@24099" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24100" to="Node2D/Foreground1/@Area2D@24100" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24101" to="Node2D/Foreground1/@Area2D@24101" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24102" to="Node2D/Foreground1/@Area2D@24102" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24103" to="Node2D/Foreground1/@Area2D@24103" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24104" to="Node2D/Foreground1/@Area2D@24104" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24105" to="Node2D/Foreground1/@Area2D@24105" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24106" to="Node2D/Foreground1/@Area2D@24106" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24107" to="Node2D/Foreground1/@Area2D@24107" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24108" to="Node2D/Foreground1/@Area2D@24108" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24906" to="Node2D/Foreground1/@Area2D@24906" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/Checkpoint" to="Node2D/Foreground1/Checkpoint" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Foreground1/@Area2D@24912" to="Node2D/Foreground1/@Area2D@24912" method="_on_body_entered"]
+
+[editable path="Node2D/Basics/Player"]
+[editable path="Node2D/Basics/Options"]

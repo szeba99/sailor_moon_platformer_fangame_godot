@@ -1,0 +1,130 @@
+[gd_scene format=4 uid="uid://de2xk0wxptdey"]
+
+[ext_resource type="PackedScene" uid="uid://ci317f7t4mxwx" path="res://prefabs/basic/player.tscn" id="1_v402o"]
+[ext_resource type="PackedScene" uid="uid://6bogh472rrof" path="res://prefabs/basic/options.tscn" id="2_kw0md"]
+[ext_resource type="AudioStream" uid="uid://beh05xmfwaash" path="res://music/[AnimeSynth] Sailor Moon -  Sailor Moon (SNES) Mystery.mp3" id="2_mp6a7"]
+[ext_resource type="PackedScene" uid="uid://cexkxakke81h" path="res://prefabs/tilemaps/foreground_1_tileset.tscn" id="4_ptkjl"]
+[ext_resource type="PackedScene" uid="uid://dxv5e1mi2n4xp" path="res://prefabs/tilemaps/foreground_2_tileset.tscn" id="5_c2r5i"]
+[ext_resource type="PackedScene" uid="uid://dehp7riv8p3kd" path="res://prefabs/tilemaps/tilemap_32x.tscn" id="6_tkmgx"]
+[ext_resource type="PackedScene" uid="uid://qbddqgclgm4e" path="res://prefabs/basic/tuxedo_end.tscn" id="7_431il"]
+[ext_resource type="Script" uid="uid://rejgvt3yqp6c" path="res://scripts/death_zone.gd" id="8_lpwa5"]
+[ext_resource type="PackedScene" uid="uid://d2wlacln52ryq" path="res://prefabs/environments/night_city_sky1_parallax_bokeh.tscn" id="9_qpwg1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_an5b0"]
+distance = -614.59
+
+[node name="Node2D" type="Node2D" unique_id=872814677]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1177740253]
+position = Vector2(0, 13)
+
+[node name="Basics" type="Node2D" parent="Node2D" unique_id=883582704]
+
+[node name="Player" parent="Node2D/Basics" unique_id=1127991153 instance=ExtResource("1_v402o")]
+position = Vector2(148, 493)
+
+[node name="CollisionShape2D" parent="Node2D/Basics/Player" index="0" unique_id=1166271789]
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D/Basics/Player" index="1" unique_id=1252327563]
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" parent="Node2D/Basics/Player" index="2" unique_id=1746230644]
+limit_bottom = 704
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" parent="Node2D/Basics/Player" index="3" unique_id=1721525908]
+metadata/_edit_lock_ = true
+
+[node name="Moon coins" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="0" unique_id=638447676]
+metadata/_edit_lock_ = true
+
+[node name="Sailor Moon" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="1" unique_id=1391130848]
+metadata/_edit_lock_ = true
+
+[node name="number" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="2" unique_id=1558200261]
+metadata/_edit_lock_ = true
+
+[node name="fps_label" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="3" unique_id=126439308]
+metadata/_edit_lock_ = true
+
+[node name="lives" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="4" unique_id=1813035136]
+metadata/_edit_lock_ = true
+
+[node name="Well done!" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="5" unique_id=169968713]
+metadata/_edit_lock_ = true
+
+[node name="Boyfriend rescued!" parent="Node2D/Basics/Player/CanvasLayer/Well done!" index="0" unique_id=877522473]
+metadata/_edit_lock_ = true
+
+[node name="RecordLabel" parent="Node2D/Basics/Player/CanvasLayer" parent_id_path=PackedInt32Array(1127991153, 953021427) index="6" unique_id=977291309]
+metadata/_edit_lock_ = true
+
+[node name="ExitScene" parent="Node2D/Basics/Player" index="7" unique_id=562431776]
+metadata/_edit_lock_ = true
+
+[node name="Black" parent="Node2D/Basics/Player/ExitScene" index="1" unique_id=1588249650]
+metadata/_edit_lock_ = true
+
+[node name="Options" parent="Node2D/Basics" unique_id=1416181760 instance=ExtResource("2_kw0md")]
+metadata/_edit_lock_ = true
+
+[node name="MusicPlayer" parent="Node2D/Basics/Options" index="1" unique_id=1638083897]
+stream = ExtResource("2_mp6a7")
+
+[node name="TouchControl" parent="Node2D/Basics/Options/Menus" parent_id_path=PackedInt32Array(1416181760, 1467117507) index="0" unique_id=1665933378]
+metadata/_edit_lock_ = true
+
+[node name="left_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="0" unique_id=1267113585]
+metadata/_edit_lock_ = true
+
+[node name="right_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="1" unique_id=133690553]
+metadata/_edit_lock_ = true
+
+[node name="jump_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="2" unique_id=2039670655]
+metadata/_edit_lock_ = true
+
+[node name="middle_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="3" unique_id=936747151]
+metadata/_edit_lock_ = true
+
+[node name="down_touch" parent="Node2D/Basics/Options/Menus/TouchControl" index="4" unique_id=1274278729]
+metadata/_edit_lock_ = true
+
+[node name="Open_Main_Menu" parent="Node2D/Basics/Options/Menus" parent_id_path=PackedInt32Array(1416181760, 1467117507) index="1" unique_id=224008890]
+metadata/_edit_use_anchors_ = true
+
+[node name="TileEditors" type="Node2D" parent="Node2D/Basics" unique_id=395903903]
+
+[node name="Foreground1" parent="Node2D/Basics/TileEditors" unique_id=1533288404 instance=ExtResource("4_ptkjl")]
+tile_map_data = PackedByteArray("AAAAAAkAIAAAAAMAAAATAAkAIAACAAMAAAATAAoAIAADAAIAAAAAAAoAIAABAAIAAAABAAkAIAABAAMAAAACAAkAIAABAAMAAAADAAkAIAABAAMAAAAEAAkAIAABAAMAAAAFAAkAIAABAAMAAAAGAAkAIAABAAMAAAAHAAkAIAABAAMAAAAIAAkAIAABAAMAAAAJAAkAIAABAAMAAAAKAAkAIAABAAMAAAALAAkAIAABAAMAAAAMAAkAIAABAAMAAAANAAkAIAABAAMAAAAOAAkAIAABAAMAAAAPAAkAIAABAAMAAAAQAAkAIAABAAMAAAARAAkAIAABAAMAAAASAAkAIAABAAMAAAASAAoAIAACAAIAAAARAAoAIAACAAIAAAAQAAoAIAACAAIAAAAPAAoAIAACAAIAAAAOAAoAIAACAAIAAAANAAoAIAACAAIAAAAMAAoAIAACAAIAAAALAAoAIAACAAIAAAAKAAoAIAACAAIAAAAJAAoAIAACAAIAAAAIAAoAIAACAAIAAAAHAAoAIAACAAIAAAAFAAoAIAACAAIAAAAEAAoAIAACAAIAAAADAAoAIAACAAIAAAAGAAoAIAACAAIAAAACAAoAIAACAAIAAAABAAoAIAACAAIAAAAIAAYAIAADAAEAAAAJAAMAIAADAAEAAAAJAAYAIAADAAAAAAAKAAMAIAADAAAAAAAKAAYAIAADAAEAAAALAAMAIAADAAEAAAALAAYAIAADAAAAAAAMAAYAIAADAAEAAAAZAAkAIAADAAEAAAAZAAoAIAADAAEAAAAaAAkAIAADAAEAAAAaAAoAIAADAAEAAAAbAAkAIAADAAEAAAAbAAoAIAADAAEAAAAcAAkAIAADAAEAAAAcAAoAIAADAAEAAAAdAAkAIAADAAEAAAAdAAoAIAADAAEAAAAeAAkAIAADAAEAAAAeAAoAIAADAAEAAAAfAAkAIAADAAEAAAAfAAoAIAADAAEAAAAkAAgAIAADAAEAAAAkAAkAIAADAAEAAAAkAAoAIAADAAEAAAAlAAgAIAADAAEAAAAlAAkAIAADAAEAAAAlAAoAIAADAAEAAAAmAAgAIAADAAEAAAAmAAkAIAADAAEAAAAmAAoAIAADAAEAAAAnAAgAIAADAAEAAAAnAAkAIAADAAEAAAAnAAoAIAADAAEAAAAsAAgAIAAAAAMAAAAsAAkAIAABAAIAAAAsAAoAIAABAAIAAAAtAAgAIAABAAMAAAAuAAgAIAABAAMAAAAvAAgAIAABAAMAAAAwAAgAIAABAAMAAAAxAAgAIAABAAMAAAAyAAgAIAACAAMAAAAyAAkAIAADAAIAAAAyAAoAIAADAAIAAAAtAAkAIAACAAIAAAAtAAoAIAACAAIAAAAuAAkAIAACAAIAAAAuAAoAIAACAAIAAAAvAAkAIAACAAIAAAAvAAoAIAACAAIAAAAwAAkAIAACAAIAAAAwAAoAIAACAAIAAAAxAAkAIAACAAIAAAAxAAoAIAACAAIAAAAbAAgAAQAAAAAAAQAeAAgAAQAAAAAAAQAnAAcAAQAAAAAAAQAtAAcAAQAAAAAAAQAiAAgAAQAAAAAAAwAWAAkAAQAAAAAABAAdAAcAAQAAAAAABQAmAAYAAQAAAAAABQA=")
+
+[node name="Foreground2" parent="Node2D/Basics/TileEditors" unique_id=1572379685 instance=ExtResource("5_c2r5i")]
+
+[node name="tilemap_32x" parent="Node2D/Basics/TileEditors" unique_id=1801950920 instance=ExtResource("6_tkmgx")]
+
+[node name="TuxedoEnd" parent="Node2D/Basics" unique_id=1710176514 instance=ExtResource("7_431il")]
+position = Vector2(3107, 411.99997)
+
+[node name="deathzones" type="Node2D" parent="Node2D/Basics" unique_id=594907255]
+
+[node name="Area2D" type="Area2D" parent="Node2D/Basics/deathzones" unique_id=68258061]
+script = ExtResource("8_lpwa5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Basics/deathzones/Area2D" unique_id=734451145]
+position = Vector2(0, 178)
+shape = SubResource("WorldBoundaryShape2D_an5b0")
+
+[node name="Level" type="Node2D" parent="Node2D" unique_id=1126045774]
+
+[node name="Sky" parent="." unique_id=559529114 instance=ExtResource("9_qpwg1")]
+position = Vector2(473, -110)
+
+[connection signal="body_entered" from="Node2D/Basics/TileEditors/Foreground1/Coin" to="Node2D/Basics/TileEditors/Foreground1/Coin" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Basics/TileEditors/Foreground1/@Area2D@23780" to="Node2D/Basics/TileEditors/Foreground1/@Area2D@23780" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Basics/TileEditors/Foreground1/@Area2D@23781" to="Node2D/Basics/TileEditors/Foreground1/@Area2D@23781" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Basics/TileEditors/Foreground1/@Area2D@23782" to="Node2D/Basics/TileEditors/Foreground1/@Area2D@23782" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Basics/TileEditors/Foreground1/EnergyBall" to="Node2D/Basics/TileEditors/Foreground1/EnergyBall" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Basics/deathzones/Area2D" to="Node2D/Basics/deathzones/Area2D" method="_on_body_entered"]
+
+[editable path="Node2D/Basics/Player"]
+[editable path="Node2D/Basics/Options"]
